@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+{% block main %}
+{%- if g_profile is defined %}
+  {%- if paginator is undefined or paginator.current_index == 1 %}
+{% include "partials/profile.html" %}
+  {%- endif %}
+{%- elif taxonomy.name == "tags" %}
+<h1 class="mb-16">#{{ term.name }}</h1>
+{%- elif taxonomy.name == "categories" %}
+<h1 class="mb-16">{{ term.name }}</h1>
+{%- else %}
+<h1 class="mb-16">{{ term.name }}</h1>
+{%- endif %}
+{% include "partials/page_list.html" %}
+{% endblock main %}

@@ -1,0 +1,84 @@
+title = "Decapsulate Podcast"
+description = "description"
+base_url = "https://decapsulate.com"
+author = "[Namtao Productions](https://www.namtao.com)"
+theme = "linkita"
+
+compile_sass = true
+build_search_index = true
+generate_sitemap = true
+generate_robots_txt = true
+taxonomies = [{ name = "tags", feed = true }]
+default_language = "en"
+generate_feeds = true
+feed_filenames = ["atom.xml", "rss.xml", "decapsulate-mp3.xml"]
+
+[markdown]
+insert_anchor_links = "heading"
+bottom_footnotes = true
+smart_punctuation = true
+render_emoji = true
+highlight_code = true
+highlight_theme = "visual-studio-dark"
+
+[extra.menus]
+menu_name = [
+  #{ url = "$BASE_URL/blog/", name = "Archive" },
+  #{ url = "$BASE_URL/categories/", name = "Categories" },
+  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "$BASE_URL/about/", name = "About" },
+]
+
+[extra]
+math = true
+mermaid = true
+comment = true
+title_separator = " | "
+header_menu_name = "menu_name"
+disable_default_favicon = false
+disable_javascript = false
+use_cdn = false
+relative_urls = false
+urls_to_index_html = false
+page_summary_on_paginator = false
+invert_page_navigation = false
+
+# You can reorder the strings, remove them, replace them.
+# For example, you can replace "site_title" with "home_button".
+# Default value: ["site_title", "theme_button", "search_button", "translations_button"]
+# header_buttons = []
+
+# Valid "when" values:
+#  "date", "date_updated", "reading_time", "word_count", "authors", "tags", "".
+# The "prepend" and "append" are used when the value of "when" is defined for the page.
+# e.g. [{when="", prepend="Page Info: "},{when="date",prepend="Published on "},{when="authors",prepend="By "}]
+# page_info = [{ when="date" }, { when="date_updated", prepend="(", append=")" }, { when="reading_time" }]
+# page_info_on_paginator = [{ when="date" }, { when="reading_time" }]
+
+# Enable table of contents on all pages.
+# If not set, toc is enabled only on posts.
+# If set to false, toc is disabled on all pages.
+# Type: boolean or object
+toc = true
+
+# Replace "your_username" with your username.
+[extra.profiles.your_username.open_graph]
+# The URL of social image.
+image = ""
+# A description of what is in the social image.
+# Default value: ""
+image_alt = ""
+# Your first name. No default value.
+first_name = ""
+# Your last name. No default value.
+last_name = ""
+# Your username. No default value.
+username = ""
+# e.g. "female" or "male". No default value.
+gender = ""
+fediverse_creator = { handle = "tris", domain = "namtao.com" }
+
+[extra.footer]
+
+copyright = "&copy; $YEAR [Namtao Productions](https://www.namtao.com) &vert; [CC BY-SA 4.0]($LICENSE_URL)"
+license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"

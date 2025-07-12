@@ -1,0 +1,71 @@
+<!-- Profile -->
+{%- if g_profile.languages[lang].name %}
+  {%- set profile_name = g_profile.languages[lang].name %}
+{%- elif g_profile.name %}
+  {%- set profile_name = g_profile.name %}
+{%- endif %}
+{%- if g_profile.languages[lang].bio %}
+  {%- set profile_bio = g_profile.languages[lang].bio %}
+{%- elif g_profile.bio %}
+  {%- set profile_bio = g_profile.bio %}
+{%- endif %}
+{%- if g_profile.languages[lang].social %}
+  {%- set profile_social = g_profile.languages[lang].social %}
+{%- elif g_profile.social %}
+  {%- set profile_social = g_profile.social %}
+{%- endif %}
+{%- if g_profile.languages[lang].avatar_alt %}
+  {%- set profile_avatar_alt = g_profile.languages[lang].avatar_alt %}
+{%- elif g_profile.avatar_alt %}
+  {%- set profile_avatar_alt = g_profile.avatar_alt %}
+{%- endif %}
+<div class="mb-16 flex items-start">
+  {%- if g_profile.avatar_url %}
+  <div
+    class="not-prose mr-5 shrink-0 rounded-full border-[0.5px] border-black/10 bg-white/50 p-3 shadow dark:bg-white/[15%]">
+    <img
+      class="{% if g_profile.avatar_invert %}dark:invert{% endif %} my-0 aspect-square w-16 rounded-full !bg-black/5 hover:animate-spin"
+      src="{{ m_url::rel(there=get_url(path=g_profile.avatar_url, cachebust=true), here=g_here, base=g_base) }}"{%
+        if profile_avatar_alt is defined %} alt="{{ profile_avatar_alt | escape_xml | safe }}"{% endif %} />
+  </div>
+  {%- endif %}
+  <div>
+    {%- if profile_name is defined %}
+    <h1 class="mb-2 text-3xl font-bold">{{ profile_name }}</h1>
+    {%- endif %}
+    {%- if profile_bio is defined %}
+    <div class="mb-2 break-words">
+      {{ profile_bio | markdown(inline=true) | safe }}
+    </div>
+    {%- endif %}
+
+    {%- if profile_social is defined %}
+    <nav class="flex justify-start {%
+    if profile_social | length > 5 %}flex-row flex-wrap gap-x-3{%
+    else %}space-x-3{% endif %} dark:invert">
+      {%- for social in profile_social %}
+        {%- if social.urls[lang] %}
+          {%- set social_url = social.urls[lang] %}
+        {%- else %}
+          {%- set social_url = social.url %}
+        {%- endif %}
+        {%- if social.titles[lang] %}
+          {%- set social_title = social.titles[lang] %}
+        {%- elif social.title %}
+          {%- set social_title = social.title %}
+        {%- else %}
+          {%- set social_title = social.name %}
+        {%- endif %}
+      <a
+        class="primary-link h-8 w-8 text-[0] [background:var(--url)_center_center/cover_no-repeat]"
+        style="--url: url({{ m_url::social_icon(icon=social.name, prl=false) }});"
+        href="{{ m_url::rel(there=m_url::get(url=social_url), here=g_here, base=g_base) }}"
+        target="_blank"
+        rel="{% if social.name == `rss` %}alternate{% else %}me{% endif %}"
+        title="{{ social_title }}"
+        >{{ social.name }}</a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+  </div>
+</div>
