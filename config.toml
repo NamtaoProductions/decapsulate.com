@@ -14,7 +14,6 @@ generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml", "decapsulate-mp3.xml"]
 
 [markdown]
-insert_anchor_links = "heading"
 bottom_footnotes = true
 smart_punctuation = true
 render_emoji = true
