@@ -13,7 +13,7 @@ paginate_by = 10
     </br>
     </br>
 
-Disussing tech, tools, and tips on how to survive inside a creative brain. Hosted by Tris & Robin.
+Discussing tech, tools, and tips on how to survive inside a creative brain. Hosted by Tris & Robin.
 
   </div>
   </div>
