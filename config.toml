@@ -8,7 +8,6 @@ compile_sass = true
 build_search_index = true
 generate_sitemap = true
 generate_robots_txt = true
-taxonomies = [{ name = "tags", feed = true }]
 default_language = "en"
 generate_feeds = true
 feed_filenames = ["atom.xml", "rss.xml", "decapsulate-mp3.xml"]
@@ -26,6 +25,11 @@ menu_name = [
   { url = "$BASE_URL/about/", name = "About" },
   { url = "$BASE_URL/subscribe/", name = "Subscribe" },
 ]
+
+[[taxonomies]]
+name = "tags"
+feed = true
+paginate_by = 4
 
 [extra]
 math = true
