@@ -1,4 +1,4 @@
-title = "Decapsulate Podcast"
+title = "Decapsulate"
 description = "Unpacking life"
 base_url = "https://decapsulate.com"
 author = "Namtao Productions"
@@ -22,8 +22,6 @@ highlight_theme = "visual-studio-dark"
 
 [extra.menus]
 menu_name = [
-  #{ url = "$BASE_URL/blog/", name = "Archive" },
-  #{ url = "$BASE_URL/categories/", name = "Categories" },
   { url = "$BASE_URL/tags/", name = "Tags" },
   { url = "$BASE_URL/about/", name = "About" },
   { url = "$BASE_URL/subscribe/", name = "Subscribe" },
@@ -59,17 +57,17 @@ invert_page_navigation = false
 # If not set, toc is enabled only on posts.
 # If set to false, toc is disabled on all pages.
 # Type: boolean or object
-toc = true
+toc = false
 
 # Replace "your_username" with your username.
 [extra.profiles.your_username.open_graph]
 # The URL of social image.
-image = ""
+image = "https://decapsulate.com/logo.jpg"
 # A description of what is in the social image.
 # Default value: ""
-image_alt = ""
+image_alt = "A white dashed square above the title 'Decapsulate' and subtitle 'unpacking life'"
 # Your first name. No default value.
-first_name = ""
+first_name = "Decapsulate"
 # Your last name. No default value.
 last_name = ""
 # Your username. No default value.
