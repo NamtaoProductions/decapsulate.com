@@ -1,7 +1,7 @@
 title = "Decapsulate Podcast"
-description = "description"
+description = "Unpacking life"
 base_url = "https://decapsulate.com"
-author = "[Namtao Productions](https://www.namtao.com)"
+author = "Namtao Productions"
 theme = "linkita"
 
 compile_sass = true

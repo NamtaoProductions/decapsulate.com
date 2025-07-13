@@ -17,12 +17,12 @@
     <generator>Zola</generator>
     <language>{{ lang }}</language>
     <copyright>Namtao Productions</copyright>
-    <managingEditor>TODO MANAGING EDITOR</managingEditor>
-    <webMaster>TODO WEBMASTER</webMaster>
+    <managingEditor>Namto Productions</managingEditor>
+    <webMaster>Namtao Productions</webMaster>
     <pubDate />
     <lastBuildDate />
     <image>
-      <url>https://decapsulate.com/logo-large.jpg</url>
+      <url>https://decapsulate.com/logo.jpg</url>
       <title>Decapsulate Logo</title>
       <link>https://decapsulate.com</link>
     </image>
@@ -32,7 +32,7 @@
 
     <itunes:author>Namtao Productions</itunes:author>
     <itunes:category text="Technology" />
-    <itunes:image href="https://decapsulate.com/logo-large.jpg" />
+    <itunes:image href="https://decapsulate.com/logo.jpg" />
     <itunes:explicit>false</itunes:explicit>
     <itunes:owner>
       <itunes:name>Namtao Productions</itunes:name>
@@ -50,7 +50,7 @@
         {%- if page.authors -%}
           {{ page.authors[0] }}
         {%- elif config.author -%}
-          {{ config.author }}
+          { config.author }}
         {%- else -%}
           Unknown
         {%- endif -%}
@@ -73,7 +73,7 @@
       </itunes:author>
 
 
-      <itunes:image href="https://decapsulate.com/logo-large.jpg" />
+      <itunes:image href="https://decapsulate.com/large.jpg" />
       <itunes:duration>1</itunes:duration> <!-- we should compute this -->
       <itunes:explicit>false</itunes:explicit>
       <itunes:subtitle>{{ page.description }}</itunes:subtitle>
