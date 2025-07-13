@@ -15,6 +15,9 @@
   <!-- Begin Head End inject -->
   {% include "injects/head_end.html" ignore missing %}
   <!-- End Head End inject -->
+
+  <!-- this is sub-optimal, but tailwind requires a js install... -->
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"/>
 </head>
 
 <body class="text-black duration-100 ease-out bg-[var(--bg)] dark:text-white">

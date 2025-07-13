@@ -1,7 +1,9 @@
-+++
-title = "About Decapsulate"
-description = ""
-path = "about"
-+++
+---
+title: "About Decapsulate"
+description: ""
+path: "about"
+---
 
-## Hello, world!
+
+
+## About Page

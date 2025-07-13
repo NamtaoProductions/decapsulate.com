@@ -1,21 +1,35 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" version="2.0">
   <channel>
-    <title>Decapsulate</title>
-    <link>https://decapsulate.com</link>
-    <description>Unpacking life.</description>
-    <language>English</language>
+    <title>{{ config.title }}
+      {%- if term %} - {{ term.name }}
+      {%- elif section.title %} - {{ section.title }}
+      {%- endif -%}
+    </title>
+    <link>
+      {%- if section -%}
+        {{ section.permalink | escape_xml | safe }}
+      {%- else -%}
+        {{ config.base_url | escape_xml | safe }}
+      {%- endif -%}
+    </link>
+    <description>{{ config.description }}</description>
+    <generator>Zola</generator>
+    <language>{{ lang }}</language>
     <copyright>Namtao Productions</copyright>
     <managingEditor>TODO MANAGING EDITOR</managingEditor>
     <webMaster>TODO WEBMASTER</webMaster>
     <pubDate />
     <lastBuildDate />
-    <generator>pfg-rs</generator>
     <image>
       <url>https://decapsulate.com/logo-large.jpg</url>
       <title>Decapsulate Logo</title>
       <link>https://decapsulate.com</link>
     </image>
+
+    <atom:link href="{{ feed_url | safe }}" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{{ last_updated | date(format="%a, %d %b %Y %H:%M:%S %z") }}</lastBuildDate>
+
     <itunes:author>Namtao Productions</itunes:author>
     <itunes:category text="Technology" />
     <itunes:image href="https://decapsulate.com/logo-large.jpg" />
@@ -24,25 +38,50 @@
       <itunes:name>Namtao Productions</itunes:name>
       <itunes:email>contact@namtao.com</itunes:email>
     </itunes:owner>
-    <itunes:subtitle>Unpacking things</itunes:subtitle>
-    <itunes:summary>Unpacking life.</itunes:summary>
+    <itunes:subtitle>Unpacking life</itunes:subtitle>
+    <itunes:summary>Unpacking life</itunes:summary>
     <itunes:keywords>Non-fiction, technology</itunes:keywords>
+
+    {%- for page in pages %}
     <item>
-      <title>Pilot Teaser: On Writing &amp; Mental Health</title>
-      <link>https://decapsulate.com/episodes/1</link>
-      <description><![CDATA[In this patreon-only pilot, Tris and Robin introduce themselves and share tips for writing podcasts, blogs, videos and how to survive inside a creative brain.]]></description>
-      <author>contact@namtao.com</author>
-      <enclosure url="https://decapsulate.com/audio/DC1.mp3" length="0" type="audio/mpeg" />
-      <guid>https://decapsulate.com/audio/DC1.mp3</guid>
-      <pubDate>2024-08-30</pubDate>
-      <podcast:transcript type="text/plain" url="https://decapsulate.com/episodes/1.txt" />
-      <itunes:author>Namtao Productions</itunes:author>
+      <title>{{ page.title }}</title>
+      <pubDate>{{ page.date | date(format="%a, %d %b %Y %H:%M:%S %z") }}</pubDate>
+      <author>
+        {%- if page.authors -%}
+          {{ page.authors[0] }}
+        {%- elif config.author -%}
+          {{ config.author }}
+        {%- else -%}
+          Unknown
+        {%- endif -%}
+      </author>
+      <link>{{ page.permalink | escape_xml | safe }}</link>
+      <enclosure url="https://decapsulate.com/{{ page.slug }}.mp3" length="0" type="audio/mpeg" />
+      <guid>https://decapsulate.com/{{ page.slug }}.mp3</guid>
+      <description xml:base="{{ page.permalink | escape_xml | safe }}">{% if page.summary %}{{ page.summary }}{% else %}{{ page.content }}{% endif %}</description>
+
+
+
+      <itunes:author>
+        {%- if page.authors -%}
+          {{ page.authors[0] }}
+        {%- elif config.author -%}
+          {{ config.author }}
+        {%- else -%}
+          Unknown
+        {%- endif -%}
+      </itunes:author>
+
+
       <itunes:image href="https://decapsulate.com/logo-large.jpg" />
-      <itunes:duration>1</itunes:duration>
+      <itunes:duration>1</itunes:duration> <!-- we should compute this -->
       <itunes:explicit>false</itunes:explicit>
-      <itunes:subtitle>episode subtitle</itunes:subtitle>
-      <itunes:summary>In this patreon-only pilot, Tris and Robin introduce themselves and share tips for writing podcasts, blogs, videos and how to survive inside a creative brain.</itunes:summary>
+      <itunes:subtitle>{{ page.description }}</itunes:subtitle>
+      <itunes:summary>{{ page.description }}</itunes:summary>
       <itunes:keywords>technology</itunes:keywords>
+
     </item>
+    {%- endfor %}
+
   </channel>
 </rss>
