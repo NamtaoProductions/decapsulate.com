@@ -2,7 +2,7 @@
 
 Head to <https://www.decapsulate.com> to see the site.
 
-Poke around here if you're interested, the site is built using the amazing [Zola](https://www.getzola.org/), which builds the site from simple markdown text files. Additionally, it builds the rss blog feed, the podcast feed, manages all the metadata and even validates all links are valid. The markdown files themselves are in [content/](https://github.com/NamtaoProductions/decapsulate.com/tree/main/content).
+Poke around here if you're interested, the site is built using the amazing [Zola](https://www.getzola.org/), a featureful static site generator written in Rust. It builds the site from simple markdown text files. Additionally, it builds the rss blog feed, the podcast feed, manages all the metadata and even validates all links are valid. The markdown files themselves are in [content/](https://github.com/NamtaoProductions/decapsulate.com/tree/main/content).
 
 All content on this page is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International](http://creativecommons.org/licenses/by-nc/4.0/) license.
 
