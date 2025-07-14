@@ -86,3 +86,29 @@ fediverse_creator = { handle = "tris", domain = "namtao.com" }
 
 copyright = "&copy; $YEAR [Namtao Productions](https://www.namtao.com) &vert; [CC BY-SA 4.0]($LICENSE_URL)"
 license_url = "https://creativecommons.org/licenses/by-sa/4.0/deed"
+
+[extra.giscus]
+# No default value.
+repo = "NamtaoProductions/decapsulate.com"
+# No default value.
+repo_id = "R_kgDOPLQ6JQ"
+# No default value.
+category = "Episodes"
+# No default value.
+category_id = "DIC_kwDOPLQ6Jc4Cs67B"
+# Default value: "pathname"
+mapping = "pathname"
+# Default value: 1
+strict = 0
+# Default value: 0
+reactions_enabled = 1
+# Default value: 0
+emit_metadata = 0
+# Default value: "top"
+input_position = "top"
+# Default value: "light"
+theme = "dark"
+# Default value: "en"
+lang = "en"
+# Default value: "lazy"
+loading = "lazy"
