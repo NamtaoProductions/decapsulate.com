@@ -56,7 +56,7 @@
         {%- endif -%}
       </author>
       <link>{{ page.permalink | escape_xml | safe }}</link>
-      <enclosure url="https://decapsulate.com/{{ page.slug }}.mp3" length="0" type="audio/mpeg" />
+      <enclosure url="https://decapsulate.com/{{ page.slug }}.mp3" length="{{ page.extra.duration }}" type="audio/mpeg" />
       <guid>https://decapsulate.com/{{ page.slug }}.mp3</guid>
       <description xml:base="{{ page.permalink | escape_xml | safe }}">{% if page.summary %}{{ page.summary }}{% else %}{{ page.content }}{% endif %}</description>
 
@@ -74,7 +74,7 @@
 
 
       <itunes:image href="https://decapsulate.com/large.jpg" />
-      <itunes:duration>1</itunes:duration> <!-- we should compute this -->
+      <itunes:duration>{{ page.extra.duration }}</itunes:duration> <!-- we should compute this -->
       <itunes:explicit>false</itunes:explicit>
       <itunes:subtitle>{{ page.description }}</itunes:subtitle>
       <itunes:summary>{{ page.description }}</itunes:summary>
