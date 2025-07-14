@@ -21,9 +21,11 @@ highlight_theme = "visual-studio-dark"
 
 [extra.menus]
 menu_name = [
-  { url = "$BASE_URL/tags/", name = "Tags" },
+  { url = "$BASE_URL/subscribe/", name = "Listen" },
   { url = "$BASE_URL/about/", name = "About" },
-  { url = "$BASE_URL/subscribe/", name = "Subscribe" },
+  { url = "https://github.com/NamtaoProductions/decapsulate.com/discussions", name = "Chat" },
+  { url = "https://patreon.com/decapsulate", name = "Patreon" },
+  { url = "$BASE_URL/tags/", name = "Tags" },
 ]
 
 [[taxonomies]]
