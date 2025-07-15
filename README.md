@@ -6,7 +6,7 @@ _A podcast hosted by [Tris](https://decapsulate.com/about/#tris) and [Robin](htt
 
 Feel free to poke around our [content](https://github.com/NamtaoProductions/decapsulate.com/tree/main/content) or [suggest](https://github.com/NamtaoProductions/decapsulate.com/issues/new/choose) your ideas.
 
-This site is built using the elegant, [Rust](https://www.rust-lang.org/)-based, [Zola static-site manager](https://getzola.org/).
+This site is built using the elegant [Zola](https://getzola.org/), a [Rust](https://www.rust-lang.org/)-based static site manager.
 
 ## Running the site
 
