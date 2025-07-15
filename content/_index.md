@@ -7,7 +7,7 @@ paginate_by = 10
 
 <img src="/logo.jpg" />
 
-Discussing tech, tools, and tips on how to survive inside a creative brain. Hosted by Tris & Robin.
+Discussing tech, tools, and tips on how to survive inside a creative brain. Hosted by [Tris](/about#tris) & [Robin](/about#robin).
 
   </div>
   </div>
