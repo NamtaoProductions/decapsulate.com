@@ -22,4 +22,4 @@ After spending the previous decade at [the Ubuntu corporation](https://canonical
 
 Undeterred by precent, Robin still believes he might show [his ailing blog](https://robinwinslow.uk/) some love someday soon. In the meantime, he's delighted to use chatting to Tris as the latest excuse for his writer's block.
 
-Robin also theoretically has [a Mastodon account](https://union.place/@nottrobin), although if you really want to get in touch with him, [email](mailto:robin@robinwinslow.co.uk) might be your best bet. (He very rarely checks [his LinkedIn profile](https://www.linkedin.com/in/robin-winslow-morris/)).
+Robin also theoretically has [a Mastodon account](https://union.place/@nottrobin), although if you really want to get in touch with him, [email](mailto:robin@robinwinslow.co.uk) might be your best bet. (He very rarely checks [his LinkedIn account](https://www.linkedin.com/in/robin-winslow-morris/)).
