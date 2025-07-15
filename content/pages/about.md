@@ -18,7 +18,7 @@ He maintains a digital garden at - [namtao.com](http://www.namtao.com), and can 
 
 ### Robin
 
-After spending the previous decade at [the Ubuntu company](https://canonical.com/), Robin now leads a software team at [an ambitious genetics company](https://nanoporetech.com/), alongside his volunteer work for [Asylum Welcome](https://www.asylum-welcome.org/). 
+After spending the previous decade at [the Ubuntu corporation](https://canonical.com/), Robin now leads a software team at [an breakthrough genetics outfit](https://nanoporetech.com/), alongside volunteering for [a refugee charity](https://www.asylum-welcome.org/). 
 
 Undeterred by precent, Robin still believes he might show [his ailing blog](https://robinwinslow.uk/) some love someday soon. In the meantime, he's delighted to use chatting to Tris as the latest excuse for his writer's block.
 
