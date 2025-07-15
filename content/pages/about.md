@@ -18,7 +18,8 @@ He maintains a digital garden at - [namtao.com](http://www.namtao.com), and can 
 
 ### Robin
 
- - [ ] Finish this section
+After spending the previous decade at [the Ubuntu corporation](https://canonical.com/), Robin now leads a software team at [a breakthrough genetics outfit](https://nanoporetech.com/), alongside volunteering for [a great local refugee charity](https://www.asylum-welcome.org/). 
 
-- https://robinwinslow.co.uk
-- https://union.place/@nottrobin
+Undeterred by precent, Robin still believes he might show [his ailing blog](https://robinwinslow.uk/) some love someday soon. In the meantime, he's delighted to use chatting to Tris as the latest excuse for his writer's block.
+
+Robin also theoretically has [a Mastodon account](https://union.place/@nottrobin), although if you really want to get in touch with him, [email](mailto:robin@robinwinslow.co.uk) might be your best bet. (He very rarely checks [his LinkedIn account](https://www.linkedin.com/in/robin-winslow-morris/)).
