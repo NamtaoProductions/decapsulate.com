@@ -1,9 +1,11 @@
-+++
-description = "description here"
-sort_by = "date"
-paginate_by = 10
-+++
-
+---
+description: "Unpacking life"
+sort_by: "date"
+paginate_by: 10
+extra:
+ cover:
+    image: "logo.jpg"
+---
 
 <img src="/logo.jpg" />
 
