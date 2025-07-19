@@ -23,8 +23,9 @@ highlight_theme = "visual-studio-dark"
 menu_name = [
   { url = "$BASE_URL/subscribe/", name = "Listen" },
   { url = "$BASE_URL/about/", name = "About" },
-  { url = "https://github.com/NamtaoProductions/decapsulate.com/discussions", name = "Chat" },
+  { url = "https://github.com/NamtaoProductions/decapsulate.com/", name = "Github" },
   { url = "https://patreon.com/decapsulate", name = "Patreon" },
+  { url = "https://www.teepublic.com/user/decapsulate", name = "Store" },
   { url = "$BASE_URL/tags/", name = "Tags" },
 ]
 
