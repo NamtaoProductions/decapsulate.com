@@ -1,6 +1,6 @@
 <!-- Comment -->
 {%- if config.extra.giscus.repo and not config.extra.disable_javascript %}
-<div class="giscus mt-12"></div>
+<div class="giscus mt-12" style="overflow:scroll; max-height: 25rem;"></div>
 <script
   src="https://giscus.app/client.js"
   data-repo="{{ config.extra.giscus.repo | escape_xml | safe }}"
