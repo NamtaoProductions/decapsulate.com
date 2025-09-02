@@ -27,16 +27,15 @@
   {%- endif %}
   {%- set page_toc = true %}
   {% include "partials/toc.html" %}
-  {%- if page.extra.comment | default(value=config.extra.comment) %}
-  {% include "partials/comment.html" %}
-  {%- endif %}
   <!-- Content -->
+  <a href="#discussion">skip to discussion</a>
   <section>{{ page.content | safe }}</section>
   <hr />
   {% include "partials/post_taxonomies.html" %}
   {%- if page.lower or page.higher %}
   {% include "partials/post_navigation.html" %}
   {%- endif %}
+  <h3 id="discussion">Discussion</h3>
   {%- if page.extra.comment | default(value=config.extra.comment) %}
   {% include "partials/comment.html" %}
   {%- endif %}
