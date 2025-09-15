@@ -4,6 +4,10 @@ description: "Ways to subscribe"
 path: "subscribe"
 ---
 
+<a href="https://decapsulate.com/decapsulate-mp3.xml">
+  <img src="/rss.svg" alt="RSS podcast badge" width="178" height="80">
+</a>
+
 ## Platforms We Love
 - [XML Feed](https://decapsulate.com/decapsulate-mp3.xml) for any podcast app
 - [Pocket Casts](https://pca.st/zjvg73hk)
@@ -18,3 +22,7 @@ path: "subscribe"
 - [Spotify](https://open.spotify.com/show/7881ibZEzl65yTBxzLxtou)
 - [Amazon Music](https://music.amazon.co.uk/podcasts/076308fd-6ab4-470a-ad5e-394e5df6939c)
 - [YouTube](https://www.youtube.com/@decapsulate)
+
+---
+
+(Thanks to sdr-podcast.com for the rss badge!)
