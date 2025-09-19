@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v4
+      - name: linkcheck
+        run: zola check
       - name: build_and_deploy
         uses: shalzz/zola-deploy-action@master
         env:
