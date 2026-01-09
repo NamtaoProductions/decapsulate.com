@@ -1,0 +1,662 @@
+<!doctype html>
+<html class="not-ready lg:text-base overflow-y-scroll scroll-pt-14" lang="en">
+
+<a rel="me" href="https://namtao.com/@decapsulate"></a>
+<meta name="fediverse:creator" content="@decapsulate@namtao.com">
+
+<head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="generator" content="Zola" />
+  <title>Ergonomic updates, digital garden beginnings, and the limits of LLMs | Decapsulate</title>
+  <meta property="og:site_name" content="Decapsulate" />
+  <meta property="og:title" content="Ergonomic updates, digital garden beginnings, and the limits of LLMs" />
+  <meta name="description" content="Robin takes us on a tour through his new physical workspace, as well as his digital garden vitual workspace. We both talk about the podcast&apos;s schedule, and end on an exploration of what the philosophy…" />
+  <meta property="og:description" content="Robin takes us on a tour through his new physical workspace, as well as his digital garden vitual workspace. We both talk about the podcast&apos;s schedule, and end on an exploration of what the philosophy of mind can tell us about the limits of LLM reasoning." />
+  <meta property="og:url" content="https://decapsulate.com/episodes/7/" />
+  <link rel="canonical" href="https://decapsulate.com/episodes/7/" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2026-01-09T00:00:00+00:00" />
+  <link rel="alternate" type="application/atom+xml" href="https://decapsulate.com/atom.xml" title="Decapsulate | Atom" />
+  <link rel="alternate" type="application/rss+xml" href="https://decapsulate.com/rss.xml" title="Decapsulate | RSS" />
+  <link rel="alternate" href="https://decapsulate.com/decapsulate-mp3.xml" title="Decapsulate | decapsulate-mp3.xml" />
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed" />
+  <!-- Begin Head inject -->
+  
+  <!-- End Head inject -->
+  <link rel="stylesheet" href="https://decapsulate.com/main.min.css?h=fc65ba308cf36d3ba82c" />
+  <style>
+  :root{--bg: #f4f4f5; --header: #e4e4e7; color-scheme: light;}
+  :root.dark{--bg: #18181b; --header: #27272a; color-scheme: dark;}
+  </style>
+  <meta name="theme-color" data-light="#e4e4e7" data-dark="#27272a" content="#e4e4e7" />
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="https://decapsulate.com/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="https://decapsulate.com/apple-touch-icon.png?h=a564990247a6f24c7669" />
+  <link rel="icon" type="image/png" href="https://decapsulate.com/android-icon.png?h=a6d34a87d95eeffaa655" />
+  <script src="https://decapsulate.com/js/linkita.min.js?h=1dd3ed42fc674277bc34"></script>
+  <script src="https://decapsulate.com/js/linkita-search.min.js?h=698547b4b081d012c661"></script>
+  <link rel="stylesheet" href="https://decapsulate.com/katex/katex.min.css?h=19095127357ed6d29fe0" />
+  <script defer src="https://decapsulate.com/katex/katex.min.js?h=e8d885505949f3a5f4ab"></script>
+  <script defer src="https://decapsulate.com/katex/contrib/auto-render.min.js?h=bb53eb953394531aae36"></script>
+  <script>document.addEventListener("DOMContentLoaded", window.linkita.initKatex);</script>
+  <!-- Begin Head End inject -->
+  
+  <!-- End Head End inject -->
+
+</head>
+
+<body class="text-black duration-100 ease-out bg-[var(--bg)] dark:text-white">
+  <!-- Header -->
+<header class="bg-[var(--header)] fixed top-0 z-40 mx-auto min-h-[3.25rem] w-full header-icons">
+  <div class="mx-auto w-full max-w-4xl p-2.5 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center min-h-8">
+        <a title="Go to home page" accesskey="!"
+          href="https://decapsulate.com/" class="text-2xl font-semibold">Decapsulate</a>
+        <button type="button" title="Switch color scheme" accesskey="$"
+          onclick="window.linkita.toggleDarkMode();" ondblclick="window.linkita.resetDarkMode();"
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover dark:invert [background-image:var(--icon-theme-dark)] dark:[background-image:var(--icon-theme-light)]"
+        ></button>
+        <button type="button" title="Search" accesskey="/"
+          onclick="window.linkita.toggleSearch();"
+          class="btn-search ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover [background-image:var(--icon-search)] dark:invert"
+        ></button>
+        <script>window.linkita.initSearchButton({ scripts: ["https://decapsulate.com/elasticlunr.min.js", "https://decapsulate.com/search_index.en.js"] });</script>
+      </div>
+      <div title="Menu" role="button" accesskey="+" tabindex="0"
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        onclick="window.linkita.toggleHeaderMenu();"
+        onkeydown="(event.keyCode == 13 || event.keyCode == 32) ? event.preventDefault() || window.linkita.toggleHeaderMenu() : true;"
+      ></div>
+    </div>
+    <nav class="flex w-full items-center lg:w-auto">
+      <menu
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0">
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://decapsulate.com/subscribe/"
+          >Listen</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://decapsulate.com/about/"
+          >About</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://github.com/NamtaoProductions/decapsulate.com/"
+          >Github</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://github.com/NamtaoProductions/decapsulate.com/discussions"
+          >Chat</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://patreon.com/decapsulate"
+          >Patreon</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://www.teepublic.com/user/decapsulate"
+          >Store</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://decapsulate.com/tags/"
+          >Tags</a>
+        </li>
+      </menu>
+      <!-- Begin Header Nav inject -->
+      
+      <!-- End Header Nav inject -->
+    </nav>
+  </div>
+</header>
+
+  <!-- Begin Body Start inject -->
+  
+  <!-- End Body Start inject -->
+  <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-4rem)]
+    max-w-3xl break-words px-4 pb-12 pt-28 lg:pt-32 dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg">
+      <!-- Search -->
+<div id="linkita-search-wrapper" class="hidden">
+  <ul id="linkita-search-results"></ul>
+</div>
+
+    
+<article>
+  <!-- Begin Page Start inject -->
+  
+  <!-- End Page Start inject -->
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Ergonomic updates, digital garden beginnings, and the limits of LLMs</h1>
+    <!-- Page Info -->
+<div class="text-sm antialiased opacity-80"><time
+      datetime="2026-01-09T00:00:00+00:00">2026-01-09</time><span
+        class="mx-1">&middot;</span>
+  <time
+    datetime="PT2565S">
+
+    43&nbsp;min</time>
+</div>
+
+  </header>
+  <!-- TOC -->
+
+  <!-- Content -->
+  <a href="#discussion">skip to discussion</a>
+  <section><p><audio controls src="/7.mp3"></audio></p>
+<blockquote>
+<p>Robin takes us on a tour through his new physical workspace, as well as his digital garden vitual workspace. We both talk about the podcast’s schedule, and end on an exploration of what the philosophy of mind can tell us about the limits of LLM reasoning.</p>
+</blockquote>
+<h1 id="book-chapters">📖 CHAPTERS</h1>
+<ul>
+<li>00:00 Robin’s continuing ergonomics journey</li>
+<li>12:20 Digital garden update</li>
+<li>17:29 Podcast schedule</li>
+<li>21:20 The limits of LLMs</li>
+</ul>
+<h2 id="link-links">🔗 LINKS</h2>
+<h3 id="ours">Ours</h3>
+<ul>
+<li><a href="https://robinwinslow.uk">https://robinwinslow.uk</a></li>
+<li><a href="https://noboilerplate.org">https://noboilerplate.org</a></li>
+<li><a href="https://lostterminal.com">https://lostterminal.com</a></li>
+<li><a href="https://modemprometheus.com">https://modemprometheus.com</a></li>
+<li><a href="https://phosphenecatalogue.com">https://phosphenecatalogue.com</a></li>
+</ul>
+<h3 id="external">External</h3>
+<ul>
+<li><a href="https://obsidian.md/">Obsidian.md</a></li>
+<li><a href="https://github.com/oleeskild/obsidian-digital-garden">Obsidian Digital Garden plugin</a></li>
+<li><a href="https://maggieappleton.com/garden-history">Maggie Appleton’s “A Brief History &amp; Ethos of the Digital Garden”</a></li>
+</ul>
+<h2 id="adult-credits">🧑 CREDITS</h2>
+<ul>
+<li>Decapsulate is a NAMTAO Production (namtao.com)</li>
+</ul>
+<p>It is hosted by:</p>
+<ul>
+<li>Tristram Oaten (<a href="https://mastodon.social/@0atman">https://mastodon.social/@0atman</a>)</li>
+<li>Robin Winslow (<a href="https://union.place/@nottrobin">https://union.place/@nottrobin</a>)</li>
+</ul>
+<p>This work is BrainMade (<a href="https://brainmade.org">https://brainmade.org</a>)</p>
+<h1 id="transcript">Transcript</h1>
+<p><strong>Tris:</strong> Right. oh my God. So this is extremely exciting. Robin, tell me about your ergonomics update.</p>
+<p><strong>Robin:</strong> Yeah, I finally got a desk. it’s, it was</p>
+<p><strong>Tris:</strong> Wow.</p>
+<p><strong>Robin:</strong> of quite straightforward. So I’ve shipped out my old dining table and now I’ve got myself a,a mechanical raising and lowering desk that is 110, I think centimeters wide, which is just perfect to fit behind my door.</p>
+<p><strong>Tris:</strong> I’ll say right at the top here that we are not only are we not sponsored by any of the things we’re about to speak about, we don’t even have affiliate links. So, did you get a, a flexi spot desk? I think I mentioned that last time.</p>
+<p><strong>Robin:</strong> mention</p>
+<p><strong>Tris:</strong> had good experience with them.</p>
+<p><strong>Robin:</strong> it and I think to make it affordable, it relied on finding a really cheap place to buy wood, which</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p>failed to do. And I discovered that I think basically these desks are not that complicated. So I’ve got like a fairly well reviewed thing that was actually from Amazon, for my. Shame. do put, the way I work with Amazon is I put quite a lot of effort, particularly if I’m spending any significant amount of money, I put quite a lot of effort into trying to find, to buy it from somewhere else. And then at some point I just give up and buy it from Amazon. That’s okay. I do the same. Like I, I, I switched off my Prime subscription so that my default wouldn’t be Amazon, and now I try all the local stores. I try this, I try that, then I try eBay. Then when that fails, I agree. I fall back to,</p>
+<p><strong>Robin:</strong> so this</p>
+<p><strong>Tris:</strong> to the one supplier.</p>
+<p><strong>Robin:</strong> it’s, I can’t fault it really so far, like the,it’s clearly not like solid wood because it wouldn’t have been as cheap as it was if it were, but, as in it’ll be, MDF covered in a coating, but it’s</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p><strong>Robin:</strong> enough.</p>
+<p><strong>Tris:</strong> I didn’t wanna spend like 300 pounds on, on super long-term furniture. MDF is, is, is very clever and in addition to being very cheap, it’s also very light. Like a solid wood is very heavy. the big drawback with MDF that, that I’ve seen on various DIY channels is that it’s like you have to have a bit of preparation before you drill through it because you are drilling through something that is not quite as predictable as your solid wood.</p>
+<p>You know, there’s, there’s, there’s splintering, there’s more. I believe I’ve, I’ve heard people talk about waterproofing</p>
+<p>, you know, if, like, if you spill a coffee and then it goes into the hole that you’ve just made suddenly the entire, that it like compromises the,</p>
+<p><strong>Robin:</strong> explodes and it</p>
+<p><strong>Tris:</strong> Yeah. Yeah, exactly.</p>
+<p><strong>Robin:</strong> Yeah. But anyway,</p>
+<p><strong>Tris:</strong> You find that, that there’s a half and half situation and I think the first party flexis put tabletops do this.</p>
+<p>Like the, the outer five centimeters are solid wood and then the, the most of the middle is MDF, so that you can like, yeah, I guess you, it means you can like drill into it, you know, screw something into it. Like I’ve got a headphone</p>
+<p><strong>Robin:</strong> here and I’ve, you know, just little bits. And that’s, you tend to want to do that around the edge.</p>
+<p>that makes sense. this</p>
+<p><strong>Tris:</strong> Yeah. Interesting.</p>
+<p><strong>Robin:</strong> a headphone hook, pockets dangling off the</p>
+<p><strong>Tris:</strong> Great.</p>
+<p><strong>Robin:</strong> it’s</p>
+<p><strong>Tris:</strong> The dream.</p>
+<p>hole for the cables to come through, although, I dunno why, what I’m gonna use it for,Nice.</p>
+<p><strong>Robin:</strong> that’s like off in the back</p>
+<p><strong>Tris:</strong> Tidy.</p>
+<p><strong>Robin:</strong> I literally put it</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> the side away from me. but it’s, it’s been perfectly fine. It goes from 72 centimeters high to 120, no, a hundred and it must be more than that, right? A hundred and I can’t remember what it goes up to. Yeah. But,it’s high setting is. high as I could need, and low setting is as low as I could need.</p>
+<p>It’s, know, it’s perfect. And I’ve got my stand for my monitor. I’ve got my little stand for my laptop. it’s big enough for my usage because I, it’s not like I spread out papers all over the place. yeah. And the</p>
+<p><strong>Tris:</strong> Marvelous.</p>
+<p><strong>Robin:</strong> is probably from what, maybe or something like that. I can’t remember.</p>
+<p><strong>Tris:</strong> Ah,</p>
+<p>I don’t believe that’s gonna be very useful for our international audience.</p>
+<p><strong>Robin:</strong> it’s a very well known, chair in the sense that like this same chair was available from a bunch of different places. so it was like. It’s basically the cheapest chair that I could find that looked like it had decent wheels and a mesh back and,and a tilt feature and goes up and down, know?</p>
+<p>and</p>
+<p><strong>Tris:</strong> Marvelous.</p>
+<p><strong>Robin:</strong> perfectly fine. I don’t have any complaints about it at all. yeah, I was trying to keep the price low and hit all the important points and I think it’s,yeah, it’s been great.</p>
+<p><strong>Tris:</strong> Wonderful. How about the, what is on the desk like how’s the, the monitor situation? Like the, the laptop was on a stand. You had the old MacBook keyboard, the, the perfect, the most perfect keyboard in the world. like what, what, what’s, what’s on the, on the desk?</p>
+<p>I’ve got the perfect keyboard. Great. I’m so happy for you.</p>
+<p><strong>Robin:</strong> that’s the main, that’s the main feature to be honest. and that, that sort of hasn’t really changed because that bit I. I like, I already focused on, I already had the arm for the monitor. I already had the arm for the microphone. and they clip better than they did onto the old dining table that I had. so there were points where they’d just they’d be fine for a while and then one day they’d just fall off like</p>
+<p><strong>Tris:</strong> Oh, no.</p>
+<p><strong>Robin:</strong> the dining table. but no, this is now more solid. But apart from that, the setup’s pretty much the same. I’ve got my little portable, folding stand for my laptop, which keeps my [00:05:00] laptop up and away a bit. and then, yeah, I’ve got my, got my mouse and my perfect keyboard.</p>
+<p><strong>Tris:</strong> Wonderful. I’m, I’m very pleased for you. The most important question is how has it affected your day-to-day work?</p>
+<p>I very much, I’ve only actually done a one significant stint of working, standing up. Hmm.</p>
+<p><strong>Robin:</strong> But it was good. And I think I’d like to do that. I’d like to do that more. I think if I feel like I can stay at my desk longer</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p><strong>Robin:</strong> vary my way of working at it. if I change it from standing to sitting or something like that, I feel like I</p>
+<p><strong>Tris:</strong> When I first got, yeah, when I first got my, my standing desk, I tried out a rule that I read somewhere, which is to take meetings, standing up calls, standing up, like remind oneself that like, oh, this is, this is that, because it allows you to pace, which is you typically do when you’re talking one, you know, like on, on the phone or whatever.</p>
+<p>and it like is a nice reminder to sort of get up. And meetings can often be quite boring, especially in our field and like standing increases the energy slightly so you don’t fall asleep, which is quite, quite nice. Us</p>
+<p><strong>Robin:</strong> yeah. I’ve struggled for a long time with trying to find a good wireless headset that includes a microphone, I think is</p>
+<p><strong>Tris:</strong> yes.</p>
+<p><strong>Robin:</strong> Possibly, but the, the video, the video, the, the, the webcam doesn’t come with you either. So I’m, I, I come back to my desk to speak.</p>
+<p>can, I can be walking. in, in a fair amount of the room and people could still see</p>
+<p><strong>Tris:</strong> Hmm</p>
+<p>you know, obviously they know I’m pacing, but hmm.</p>
+<p><strong>Robin:</strong> like that’s,</p>
+<p><strong>Tris:</strong> Yes, there is</p>
+<p><strong>Robin:</strong> important thing is that I can speak and they can hear me,</p>
+<p><strong>Tris:</strong> the, yes, that is true. Although, as you know, and I think probably our listeners have got by now, I really, really love having high quality audio. Even when I’m on a call, you will not find good quality Bluetooth, headphones. It is not the microphone’s fault. It is the proto the wireless protocols fault,</p>
+<p><strong>Robin:</strong> right?</p>
+<p><strong>Tris:</strong> that.</p>
+<p><strong>Robin:</strong> I did buy myself a thing that I then promptly broke very quickly, which was like a Barracuda X maybe, gaming headset. But basically the only good,</p>
+<p><strong>Tris:</strong> Oh yeah.</p>
+<p><strong>Robin:</strong> was that you can buy like a, what you want is a boom arm, right?</p>
+<p><strong>Tris:</strong> Mm-hmm.</p>
+<p><strong>Robin:</strong> I’ve done this quite well that I now have this, I now have a wired, boom arm that I can plug into my, to my headset here, my wireless headset, my, Sony X, whatever they are, wireless, headset. And I can plug in this boom arm, that’s wired so I can then plug it into my laptop. And that works well for like me being out in a noisy place and it brings the microphone close to my mouth. and that’s, and that’s great. wireless versions of that, that you can’t not, I don’t think you can just add a wireless microphone to this wireless headphone. I don’t think that exists. but to get a microphone that is a headset like this and or a smaller headset and a boom arm, you’re looking at like in, in the business space, you’re looking at like Jabra, and</p>
+<p><strong>Tris:</strong> Ugh.</p>
+<p><strong>Robin:</strong> are super expensive as well.</p>
+<p>They’re not good. They don’t look good, they look not comfortable. And they’re also</p>
+<p><strong>Tris:</strong> No.</p>
+<p><strong>Robin:</strong> 250 pounds or something crazy because I suppose they’re targeted at enterprises or something. the</p>
+<p><strong>Tris:</strong> Hmm</p>
+<p><strong>Robin:</strong> is also quite expensive, but maybe a little bit more affordable is basically gaming headsets. And in gaming headsets,</p>
+<p><strong>Tris:</strong> hmm.</p>
+<p><strong>Robin:</strong> get things where you can plug in a, A-A-A-U-S-B thing, a that has its own wireless standard that he uses to communicate between the,</p>
+<p><strong>Tris:</strong> Got it.</p>
+<p><strong>Robin:</strong> Quite common. Like a 2.4 gig,wireless, connection. Yes, exactly. Yeah. That can be, then you can have, you can have like a gigabyte, a gigabit of bandwidth. You know, that. That’ll be, that’ll be plenty.</p>
+<p><strong>Tris:</strong> Yeah. So I might go back to buying myself another ’cause I just like what happened? I snapped the. the dongle that you plug into the side of the laptop. Ah,</p>
+<p><strong>Robin:</strong> I,</p>
+<p><strong>Tris:</strong> whoops.</p>
+<p><strong>Robin:</strong> it plugged in and I like shoved it in my bag or something, and it just bent. I don’t know.</p>
+<p><strong>Tris:</strong> Mm,</p>
+<p><strong>Robin:</strong> that was annoying.</p>
+<p>But I need to, and then once you’ve killed that, like the, you can’t use the headphones. there’s no way to fix it.</p>
+<p><strong>Tris:</strong> ouch. Oh, no.</p>
+<p><strong>Robin:</strong> I hadn’t thought of that. That’s a good, good idea. The, my, my experience with key con Keyon keyboards is that they have a, a, a 2.4 gig wireless dongle because of course, in gaming every nanosecond accounts. but I’m, I’m, I’m, I’m a wired guy. As, as I, I think, you know, the battery life is great on wired stuff.</p>
+<p><strong>Tris:</strong> The, latency is great on wired stuff. The bandwidth is great. Oh, love lover. Lover went thing. However, I am wearing,Bluetooth headphones. Same as you. I wonder if the Bluetooth stack could be done, could be rooted backwards, like use the same Bluetooth profile, which is called, high quality audio, or pro audio or like whatever the, whatever the one is we’re doing now, but flip the transmitter and receiver so that the, the transmitting part is the bit that you’ve got on your head and it pushes it down over Bluetooth in high quality stereo to the, to the computer.</p>
+<p><strong>Robin:</strong> Just</p>
+<p><strong>Tris:</strong> wonder if</p>
+<p><strong>Robin:</strong> were possible, it would’ve been done because I [00:10:00] know what you</p>
+<p><strong>Tris:</strong> Mm,</p>
+<p><strong>Robin:</strong> done this thing because I did try out some Bluetooth headphones and, in</p>
+<p><strong>Tris:</strong> yeah.</p>
+<p>can be Bluetooth headphones Oh yeah.</p>
+<p><strong>Robin:</strong> and you just notice Yeah, like switch into, microphone mode</p>
+<p><strong>Tris:</strong> Headset, headset mode, it’s called.</p>
+<p><strong>Robin:</strong> the degrading in the quality of what you can hear is insane.</p>
+<p>it’s so obvious and it’s terrible.</p>
+<p><strong>Tris:</strong> mono.</p>
+<p><strong>Robin:</strong> Yeah. And it’s, it is awful. Like it’s really bad. and it’s just astounding. I don’t understand how we’ve persisted on a standardized standard like this. There is, I don’t understand how this can be such a difficult problem to solve. It’s clearly not because other, because, other, like people with proprietary wireless solutions can do it, so why Bluetooth?</p>
+<p><strong>Tris:</strong> Here’s my guess, Bluetooth chips are all the same. They’re mass produced. The, the ADCs and the Dax, like, they’re all like built to one standard, and that standard assumes the normal way of using headphones. So I bet the Bluetooth, like there’s a, like a Qualcomm or some kind of Bluetooth chip in my Sony headphones that is the same as in nearly every other Bluetooth headphones.</p>
+<p>And it’s that, that, that does all the Bluetooth stuff and there’s only one version of that.</p>
+<p><strong>Robin:</strong> But,</p>
+<p><strong>Tris:</strong> you, it’s, it’s too expensive.</p>
+<p><strong>Robin:</strong> one of the default use cases for Bluetooth is surely, a Silicon Valley dick with a. a, with an Apple phone and those white,apple wireless headphones, right? And they’re having a</p>
+<p><strong>Tris:</strong> Yes, AirPods</p>
+<p><strong>Robin:</strong> like walking down the road, you wearing these white headphones. that is a situation where you need good quality two-way audio.</p>
+<p><strong>Tris:</strong> It is. Yep. And I suppose Apple have got the, the fabrication to do a higher quality version, but most don’t.</p>
+<p><strong>Robin:</strong> Yeah. They probably do, they probably got like their own standard stuff that is not in other phones and whatever. that’s, and that’s why you should buy like the Apple Bluetooth headphones because they like add this proprietary layer because they control both sides. and that’s, but that’s, that’s another example of why the standard shit like the standard.</p>
+<p><strong>Tris:</strong> that’s because the standard doesn’t do it well for everybody else, Hopefully it will do it eventually. Like it’s only in the last, is it 10 years, 15 years that we’ve got the, the Bluetooth,</p>
+<p><strong>Robin:</strong> it’s only been</p>
+<p><strong>Tris:</strong> the,</p>
+<p><strong>Robin:</strong> for a decade and a half.</p>
+<p><strong>Tris:</strong> like the, the Bluetooth head, the high quality profile. yeah, I, I’m seeing that the quality, of AirPods on Android is very bad. What a shame. What a shame.</p>
+<h2 id="digital-garden">DIGITAL GARDEN</h2>
+<p><strong>Robin:</strong> we’ve got a second update that I am even more excited about from you, Robin.</p>
+<p>I’m reading here. Digital garden update. Oh my God. Tell me all about it.</p>
+<p><strong>Tris:</strong> it’s not that much to tell. it’s just that, like we spoke about the digital garden, you told me about digital garden, this obsidian plugin that, That allows you to easily link a folder. It allows you to easily, tag a document in your vault say, I want this to be published onto the web. so you set up this link that uses a GitHub repository and,right? is that, is it Sal? if you used Versal, that’s fine. I used GitHub pages.</p>
+<p><strong>Robin:</strong> I did the, I did the default thing. Like I just,</p>
+<p><strong>Tris:</strong> is versa. Yeah.</p>
+<p>the default tutorial. And I was curious because I’ve not used Sal before. yeah. So by default it, it tells you to set up a GitHub repository and a al, Mm-hmm.</p>
+<p><strong>Robin:</strong> and it’s linked into that. And so therefore you put this like metadata that says publish. Whatever. and then you, and then another ator in my case that just says, this one’s the homepage. and then it puts that on the website for you. And that then means that you can just edit your obsidian in markdown like you normally would. And it will just go up and it’ll be represented on the web as this, as this webpage.</p>
+<p><strong>Tris:</strong> And I was really excited when you told me about it. it’s got this whole philosophy, as you said about digital gardening behind it, where the idea is, rather than us, like thinking very carefully about how we’re gonna design a website and then, going through a whole load of steps to make sure we’re producing exactly the design that we’ve designed and all this. you are, creating a more of an organic place where you can then can just tweak it here and there. You can tidy up, you can, do some weeding. Yeah, I first heard of of Dig Digital gardening through, Maggie Appleton’s incredible post, the Brief History Ethos of the, the Digital Garden linked in the show notes. And, I fact that the, in the intro, there’s a couple of paragraphs that I will read just in case the listener hasn’t, hasn’t, isn’t up to date.</p>
+<p>she says that a garden is a collection of evolving ideas that aren’t strictly organized by their publication date. Unlike blog, they’re inherently exploratory. Notes are linked through contextual associations. They aren’t refined or complete. Notes are published as half finished thoughts that will grow and evolve over time.</p>
+<p>They’re less rigid, less performative, and less perfect than the personal websites we’re used to seeing. [00:15:00] And that that idea of being less perfect, is why I thought they were gonna be pretty good for, uh, the perfectionist, who is my cohost.</p>
+<p><strong>Robin:</strong> Yeah, I mean I</p>
+<p><strong>Tris:</strong> I.</p>
+<p><strong>Robin:</strong> this is probably something, it probably fits into a thing I’ve been trying to do in my life broadly, which is that like I think I. I think I’ve never been, I’ve always been very far from perfect. I’ve always been very chaotic and I very rarely like finish things. And I’ve realized that the only way for me to be effective in the world is to really stop expecting myself to be perfect.</p>
+<p>And that is a very difficult journey. Like it’s, I’m trying to minimize the judgment on myself. and I’ve done that in many ways. Like I’ve always been a very transparent person and I’ve, I think I’ve clocked two decades ago that me</p>
+<p><strong>Tris:</strong> Oh yeah.</p>
+<p><strong>Robin:</strong> to be radically transparent is one version of me trying to work against my inherent self-judgment by saying if I just expose everything that’s going on and I tell everybody, all the secrets and whatever, and they haven’t lynched me, then it’s fine.</p>
+<p>Yes. Radical transparency. Winslow, that’s, that’s, that’s to tea of friends. Yeah.</p>
+<p>so this, as you say, fits in very much with that. I think broadly speaking,I think crafted messages is another way to describe propaganda. and I don’t love it. I prefer that people be much more organically, straightforward with what’s actually going on for them. And, this is a great way to do that with a website, which I absolutely love. And I think it would free me from a lot of the, a lot of the worry anxiety that prevents me from writing more on my own website because I, at some point in the process of sitting down for a significant period of time, writing a whole article, committing it and pushing it so that it gets published. Thinking about whether it’s messaged in the right way for the right audience, somewhere in all of that. I tend to fall off and be like, this is too much. as I wander away and I never return and then therefore, and never gets published and</p>
+<p><strong>Tris:</strong> It’s a bit overwhelming.</p>
+<p><strong>Robin:</strong> hopefully completely shortcuts that and we don’t know yet.</p>
+<p>I only just put it up so you, you can now see if you want to garden robin winslow.uk, which is some point will become Robin Winslow uk, but not today.</p>
+<p><strong>Tris:</strong> I’m there now. Beautiful.</p>
+<p><strong>Robin:</strong> and it’s not got anything there really. It’s just got a very tiny little, you’ll see it. It’s, I haven’t even thought about what’s up there really.</p>
+<p>Well, don’t worry about it because by the time our listeners hear this, there might be something</p>
+<p>that’s true.</p>
+<p><strong>Tris:</strong> so I, there</p>
+<p><strong>Robin:</strong> and the fact that</p>
+<p><strong>Tris:</strong> I,</p>
+<p><strong>Robin:</strong> publicly spoken</p>
+<p><strong>Tris:</strong> yes,</p>
+<p><strong>Robin:</strong> now, as in, we haven’t published this yet, but I have done the beginnings</p>
+<p><strong>Tris:</strong> we’re gonna.</p>
+<p><strong>Robin:</strong> about it, is going to make me want to, focus on it a little bit more, which is a good thing. hopefully as Trish says, by the time you look at it, it not completely pointless.</p>
+<p><strong>Tris:</strong> Perfect.</p>
+<h2 id="schedule">Schedule</h2>
+<p><strong>Tris:</strong> Let us move on to something I’ve just thought of that we need to talk about, which is we are changing our schedule. Fortnightly was a bit, ambitious. monthly ish. I think, is gonna work better for us.</p>
+<p>I think if you go going back and listen to our very first episode, we actually suggested that we would do it monthly. geniuses.</p>
+<p><strong>Robin:</strong> and yeah, but I think that we then fell into, we I</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p><strong>Robin:</strong> we wanted to meet every week. We wanted to alternate the planning and the recording sessions then led us into, it’s gonna be fortnightly,</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> but I think</p>
+<p><strong>Tris:</strong> Yep.</p>
+<p><strong>Robin:</strong> if we find our way to do monthly, yeah.</p>
+<p>I think that will work better because what’s tended to happen is that record and then we will, I have been taking quite a long time to learn how to. do the cut like a, find the publishable cut of our ramblings, that I’m okay with. And that’s been taking me weeks, up to</p>
+<p><strong>Tris:</strong> I mean, you’re doing a great job.</p>
+<p><strong>Robin:</strong> better at</p>
+<p><strong>Tris:</strong> You are,</p>
+<p><strong>Robin:</strong> yeah.</p>
+<p><strong>Tris:</strong> yeah. Like a hundred times, a hundred times better. Like you’ve gone from zero to, to editing very quickly. And I’m rea I really appreciate that. Takes, takes some of the, the editing burden off me. And then I, for, for, for the listeners’ interest, I take that initial, cut, which Robin does in the script.</p>
+<p>and then I throw that into Reaper, the best audio editor on the planet, though it does look, does look like it’s from 1995. The, and then I make, I do, I like handcraft, make sure everything flows extremely well. And I, and I do death by a thousand audio cuts, so to speak, of my, of my life. Throw a load of effects, make sure it looks, make sure it sounds good.</p>
+<p>production noise, that sort of thing. I only use effects that work on raspberry pie, not because I have a raspberry pie, but because I want to hedge against the inability to do any of my professional life anywhere I wish. So like the, I’ve standardized on arm Linux as, as that, like minimum viable platform.</p>
+<p>Like if the, if it works on um, Linux, then damn it, it’ll work anywhere. And so a surprisingly large number of things do. But I, this sort of restriction does limit me quite a lot. Honestly. Even if I just chose [00:20:00] Linux, it would li limit me quite a lot. I once spoke with a prof. I, I, I paid for some mentoring with a professional, musician, professional mastering person, producer.</p>
+<p>And I said, and my first question to him was, what do I do? How do I, you know, I can’t use all of these commercial plugins, Adobe’s plugins, the isotope plugins, all of these things. I need to just use, like basic, basic plugins that work everywhere. What do I do? And he was very, very clear. He said, mate, you are fucked.</p>
+<p>And, and I was like, oh, no. But, but surely, no, no, no. He wanted me to spend 2000 pounds and buy a Mac Book Pro. that did not seem like a very sensible thing. But repo is the cornerstone of this. Repo fm, not sponsored is the, is where to get it by the same person who made Winamp, if anyone remembers the nineties, marvelous.</p>
+<p><strong>Robin:</strong> And you can</p>
+<p><strong>Tris:</strong> Still going strong.</p>
+<p><strong>Robin:</strong> design.</p>
+<p><strong>Tris:</strong> Yes, yes. They’ve not unlike Wood Amp, which has got a cool, I suppose it does have a cool skin, but yeah, it’s, it’s, uh, it’s very Windows 95, but the, it is more powerful than anything and it’s got Vim Key bindings. I’m delighted with it. Uh, VIM Key bindings using the Reaper Keys plugin.</p>
+<p>Come and talk to us. Come and send a message to me on the discussions for this episode if you’re interested, because there is a further explanation required on how to get that set up, but it’s extremely worth it.</p>
+<p><strong>Robin:</strong> much not us. This is you. If you wanna know</p>
+<p><strong>Tris:</strong> Yes. No, don’t worry. Yes,</p>
+<p><strong>Robin:</strong> ask</p>
+<p><strong>Tris:</strong> yes. Robin will read the message, but I will be replying.</p>
+<p>Yes, absolutely. Okay. That’s the update.</p>
+<p><strong>Robin:</strong> the limitations of LLMs. I have a structure and framework for discussing that I’d like to present to you and our listeners, and it comes down to the core difference between, LLMs, how lms process, language, and respond, and how humans do.</p>
+<p><strong>Tris:</strong> there is a marvelous philosopher called Alan Watts, my favorite philosopher. I have a few books of his here and in his lecture that is available on YouTube, on meditation, he talks about that the biggest problem in the world is that we talk about the. Symbols in the world instead of the things that are in the world.</p>
+<p>Now, this is a bit a bit dense and philosophical, but I promise that I’m gonna come back to linking to lms. So the idea of talking and rationalizing our lives in terms of our thoughts are that we’ve got this idea of</p>
+<p>when we, when, when you and I talk about a car, say we, there are three levels. Of this discussion. The first level are the words that we use. It’s a red car, it is a Volvo car. Like these are just words then when inside our respective brains, when we are communicating with these words, we’ve got some, what Alan Watts calls symbols, perhaps this is a philosophical term.</p>
+<p>and those words resolve into the symbols in our minds about these concepts. And the symbols are what our chemical brain has associated with this word, the car, and what we see as the car and what we hear when the car drive cars drive past us, and our memory of stories about cars and all of our cumulative experience through our lives about cars.</p>
+<p>And Abot says that that is much better. Than the words because the word. but, but that is not the real thing. The real thing is deeper down the car that we are talking about. Perhaps we’re both looking at a car that is parked on the street, is made of metal and plastic and rubber and all this other stuff, and atoms of those, of those components.</p>
+<p>And none of those actually have names in the universe. Like each little atom doesn’t have a little name like it does in a database. They’re just there in the world. In reality, we have given them names to talk about and our chemical brains have turned them into symbols to think and reason about. And the problem when discussing the car is that the symbols in my brain about a car have a very different uh.</p>
+<p>Different relationships in our an in my analog brain to the ones that they do in your analog brain and the purpose of education. One of the purposes of education is to like fill up out all our symbols so that we can at least talk on kind of the same terms. But as, ah, forget who, I forget who said this.</p>
+<p>It might’ve been like Shannon or one of the, one of the communication giants. The biggest problem in communication is the illusion. It has been completed successfully. So I say I’m, I, we look out for that car, and I, you think I’m talking about the car that we [00:25:00] are looking at, but talking about the car that is behind you and about to hit you.</p>
+<p>The biggest prob you think the communication has finished successfully. You’re like, oh, yeah, don’t worry. I’m, I’m looking out. Yeah, the car’s not moving. Brilliant.</p>
+<p><strong>Robin:</strong> Why am</p>
+<p>But the biggest prob, about to die in this scenario?</p>
+<p><strong>Tris:</strong> oh, well, I’m trying to warn you and perhaps I will dive and catch you outta the way. so I am bringing the good ship a DD back into Ritalin Bay and finally coming back to talk about LLMs. I hope it is obvious where my argument is going to go. LLMs are these networks of weighted, networks of tokens with weights between them so that you can jump between the tokens and find a likely, a likely path through the network, and you will make reasonably plausible bullshit out of it.</p>
+<p>IE completed sentences. the an LLM that has been taught on the English language has about 500,000 words, which is perhaps approximately 500,000 tokens. Maybe it’s half, maybe it’s double. But that’s the sort of order we’re talking about. 500,000 is a very small number of anything. My eyes and your eyes.</p>
+<p>If your eyes are as good as mine can see 500,000 shades of red. They don’t have names, but I can tell the difference between them. And in my mind, in my analog chemical brain, I have symbols for those different shades of red and there’s way more than 500,000 of them. And that’s just the color red. And it’s just me thinking of a simplistic example.</p>
+<p>And not only are there other colors, I dunno if you know this, robin. There are things other than colors.</p>
+<p><strong>Robin:</strong> I,</p>
+<p><strong>Tris:</strong> I.</p>
+<p><strong>Robin:</strong> have seen, I’ve seen one or two. Yeah.</p>
+<p><strong>Tris:</strong> There might be trillions or multiplied by trillions of these things that of, of, of these symbols in our brains, like, more than that, maybe multiplied by another trillion plausible, like it is so far away from the 500,000 words of the English language that an English language language model has access to.</p>
+<p>It is laughable that any knowledge, any cleverness could ever be possible in such a limited system.</p>
+<p><strong>Robin:</strong> Yeah,</p>
+<p><strong>Tris:</strong> So</p>
+<p><strong>Robin:</strong> sorry. Do you</p>
+<p><strong>Tris:</strong> yes. Yes, please, please. I’ve, I’ve, I’ve, I’ve, yeah, that is my, that is my argument discussions.</p>
+<p><strong>Robin:</strong> Yeah. my brain goes in a couple of directions, although I did look up the quote and,</p>
+<p><strong>Tris:</strong> Oh, thank you.</p>
+<p><strong>Robin:</strong> knowing where it came from is completely appropriate because,it seems that</p>
+<p><strong>Tris:</strong> Apocryphal is it?</p>
+<p><strong>Robin:</strong> knows exactly</p>
+<p><strong>Tris:</strong> Oh fuck.</p>
+<p><strong>Robin:</strong> hate that fully. Half of the quotes I look up for my videos are apocryphal. Ford did not say you can have it in any color as long as it’s black. Someone in the eighties in a business book said that, oh, sorry. Do carry on.</p>
+<p>I dunno, this is apocryphal. I dunno that it’s like something it says here, there’s no circumstances of evidence that George Bernard Shaw</p>
+<p><strong>Tris:</strong> Ah, yes.</p>
+<p><strong>Robin:</strong> So I guess he</p>
+<p><strong>Tris:</strong> He,</p>
+<p><strong>Robin:</strong> that</p>
+<p><strong>Tris:</strong> he,</p>
+<p><strong>Robin:</strong> think</p>
+<p><strong>Tris:</strong> he said a lot of things.</p>
+<p><strong>Robin:</strong> attributed to. who it isn’t necessarily true, but it says here at the top,</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> George Bernard Shaw.</p>
+<p>William H. White, Pierre Martino, I dunno,Joseph Kaufman Anonymous. Anyway,</p>
+<p><strong>Tris:</strong> Yeah. Yeah.</p>
+<p>matter. It’s a good quote. Great quote. what I was gonna say is I’m curious, I’m curious how much you think that the, so we know that regardless of how many symbols we might have in our brain. We are communicating, at least when we’re doing it in written form, purely through the words in a language set. Absolutely. Yeah,</p>
+<p><strong>Robin:</strong> and so that is the thing, this really fundamentally the space within which the LLM is trying to work is</p>
+<p><strong>Tris:</strong> absolutely.</p>
+<p><strong>Robin:</strong> through this language set. And so I’m then curious how much the mapping for us between those words and much, much richer and more complicated symbols in our brain has to do with the way that an LLM actually works. Do you know what I mean? so</p>
+<p><strong>Tris:</strong> yes. Yeah.</p>
+<p><strong>Robin:</strong> and,</p>
+<p><strong>Tris:</strong> We all need a, a philosopher and a psychologist and a brain surgeon perhaps to answer that question. Yes.</p>
+<p><strong>Robin:</strong> we do. I, as in Okay, you’ve brought</p>
+<p><strong>Tris:</strong> Oh,</p>
+<p><strong>Robin:</strong> I love it. I was just reading</p>
+<p><strong>Tris:</strong> oh,</p>
+<p>page for Alan Watts. rude. Yeah. His life is great, by the way. What an interesting person.</p>
+<p>and it’s,so this is my space. I’m interested in it. So let’s, so let’s explore it. The, ’cause you could argue that it is related, in the sense that what’s happening with an LM is it’s reading all these words that have been written by Hmm. Yeah.</p>
+<p><strong>Robin:</strong> humans, and also apparently auto-generated stuff by chat GBT five or whatever, which is just insane, but whatever.</p>
+<p><strong>Tris:</strong> Yeah. It’s not gonna get any better, is it? Yeah. Go on.</p>
+<p><strong>Robin:</strong> but</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> it, let’s, in an ideal world, say by [00:30:00] humans, so it’s reading, all this stuff is written by humans and behind all that stuff is, versions of. Our work to take a much more complex space of symbols and convey the meaning of that to each other right now imperfectly. Sure. But that’s what we’re doing when we are writing and we un and we’re understanding each other, right?</p>
+<p>And so it’s then working backwards, right? And looking at that and trying to figure out what’s the complexity underneath. And so you could say that the thing that it’s then doing, whether it’s generating this probability vector graph between, between the appearance of this word next to that word and the appearance of this sentence, that sentence, or this kind of thing, which is its version of trying to understand the actual meaning of the text. it’s, those probabilities are then a model of symbols system, right? And so then,so you could argue that is what it’s trying to do, and therefore your argument is, there is no possible set of relationships between those words. That can ever meet anything close to the complexity of the set of symbols that we in fact have when we are understanding meaning from human communication.</p>
+<p><strong>Tris:</strong> I don’t think I, I don’t think I agree. uh, what you have said is, is is very clear and pretty good, but I don’t think what, an LLM is a model of the, in infinitely, near, infinitely more complex relationships in our mind. I think it’s a model of language</p>
+<p><strong>Robin:</strong> Yes. Fair</p>
+<p><strong>Tris:</strong> and not, and not of like meaning or intelligence.</p>
+<p>Like it’s the, the, the, the, they’re not trying to be intelligent. They’re trying to just solve language and like they fully have, like we’ve, we’ve completely solved the language problem, which is amazing. I think the.</p>
+<p><strong>Robin:</strong> a very technically, spelled good capitalization, hangs together. It’s got, a subject and a, and an object in whatever sentence. Perfectly fine.</p>
+<p><strong>Tris:</strong> Have I told you on the podcast? We’ll have to cut it out. If I already have about my, the first time that I saw a demo of the company, we farms technology specifically about their African language translation model.</p>
+<p><strong>Robin:</strong> I don’t remember. I.</p>
+<p><strong>Tris:</strong> I went to a talk and they said that, so we, we farm is, was, was because all good things run outta money, was a social network for farmers in rural, in rural Africa that would, they could swap tips and questions and answers about like how to better increase their yield of coffee or how to solve the drought that was coming or I’ve only got this, what do I, how do I get why?</p>
+<p>but you, you have a very heterogeneous language problem to solve there with lots of different national languages, African languages, lots of different nations, lots of different languages. And we farm said that they had demonstrated their, Their natural language processing. This was way before LLMs.</p>
+<p>They were doing it the hard way. And the first, their first slide was, a, a paragraph of a, of a language. I didn’t, I didn’t read. And they asked if anyone knew what the language was and a few people answered. And eventually someone said Swahili. And the person said, you are wrong, but for the right reasons.</p>
+<p>And they did their whole talk. And then at the end they came back to this slide and said, this isn’t Swahili. This is, like this, this sounds like Swahili, but is gibberish. We put random data, we ran our algorithm backwards and put random data in at the end and produced like something that sounds like Swahili, but is nonsense.</p>
+<p>And it was such a good demo. I was like, wow, that’s cool. Like I, translating Swahili is like, to me that’s all very well, I, I have no way of knowing how good it is, but generating seman, syntactically valid or sonically valid things, stuff that sounds like Swahili, that suddenly, that is, that is very, very clever.</p>
+<p><strong>Robin:</strong> Yeah. feel though that’s</p>
+<p><strong>Tris:</strong> You can generate</p>
+<p><strong>Robin:</strong> what, even like Carroll was playing with the jabber walkie.</p>
+<p><strong>Tris:</strong> Yes, exactly. Ah, yes. Or or vo on poetry, you know, like, they sound like words, but they are not words or those, those songs by like, I think, I think they came outta the USSR where, where they were like western style songs that just were nonsense. That sounded like English to the, to the Russian ear.</p>
+<p><strong>Robin:</strong> yeah,</p>
+<p><strong>Tris:</strong> fun.</p>
+<p>the, so they, the reason I’m telling you this is they put random. Data in at one end, and what came out sounded like Swahili, but was nonsense. Do you see what I’m saying about LLMs?</p>
+<p><strong>Robin:</strong> not meaning Yeah, absolutely.</p>
+<p><strong>Tris:</strong> It’s modeling language, not meaning.</p>
+<p><strong>Robin:</strong> agree. But this is the thing. so you, I think that the [00:35:00] explanation of the symbols behind the words that we use in our</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> and how they are so unimaginably vast in number</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p><strong>Robin:</strong> very interesting as a way to think about our use of language.</p>
+<p>I think that’s very interesting. The thing</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> curious about is how much it’s usefully applied to even an, to as an answer to why LLMs have no intelligence. Because to</p>
+<p><strong>Tris:</strong> Right.</p>
+<p><strong>Robin:</strong> seems like it may,and so when I said that the vector graph, the statistics, the probabilities in the vector graph that are underneath its understanding of language, Are like a model of our symbol system. What I meant was it’s the closest thing you can imagine to that within the way that LMS actually work. But basically, I agree with you. It’s a difference in kind. so fundamentally the thing that makes LMS not be able to produce any form of intelligence is that they’re not trying right.</p>
+<p><strong>Tris:</strong> Yeah,</p>
+<p><strong>Robin:</strong> nothing about the way that the thing is written is intended to understand problems and then reason about what would be a good solution to those problems. That’s just</p>
+<p><strong>Tris:</strong> right.</p>
+<p><strong>Robin:</strong> in the way that the thing is written at all.</p>
+<p><strong>Tris:</strong> Auto completes, trained on the internet is incredible and it is a solved in a whole category of problems. That category of problem is language.</p>
+<p><strong>Robin:</strong> Exactly. Exactly.</p>
+<p><strong>Tris:</strong> you, you said just a moment ago, something I think that is very telling. Why does it seem. Like they have solved intelligence.</p>
+<p><strong>Robin:</strong> Hmm.</p>
+<p><strong>Tris:</strong> Why is it so easy to trick people into thinking with demonstrations of chat GPT and what and what have you?</p>
+<p>That it is intelligent and I have an answer for that as well. And the answer is a question. What is the largest part of the human brain? Robin, do you know the largest section at its function? What is the function of the largest part?</p>
+<p><strong>Robin:</strong> perhaps.</p>
+<p><strong>Tris:</strong> you, it sounds like you know way more than me. I was just gonna say the bit that does language,</p>
+<p><strong>Robin:</strong> Okay.</p>
+<p><strong>Tris:</strong> it is like the.</p>
+<p>The, the la we are such language focused species. It’s the reason with why we are at the top of the food chain. Not ’cause we’re stronger or anything like that, but like language, like, which gives us technology, which gives us guns and so forth. So, you know, it’s not all good, but language is,</p>
+<p><strong>Robin:</strong> To kill other</p>
+<p><strong>Tris:</strong> we’re s</p>
+<p><strong>Robin:</strong> true.</p>
+<p><strong>Tris:</strong> we’re so good.</p>
+<p>I mean, we’re good at running long distance. I suppose we’re the best long distance runners on the planet, but we are so good at language.</p>
+<p><strong>Robin:</strong> That’s cool.</p>
+<p><strong>Tris:</strong> We are, yeah. Oh, it’s bipedal, right? So it’s really efficient. Like we’re the only bipedal runners. So you can like, you can outrun a gazelle ’cause the gazelle gets too tired.</p>
+<p>You know, they, the old postal couriers, they had to swap horses multiple times of the day ’cause the horses would get tired. We don’t, we can carry on just doing marathons quite slowly, obviously. Especially if you’re not in training, but like you can run all day or jog all day or you won’t overheat, a horse will overheat.</p>
+<p><strong>Robin:</strong> Yeah, that is</p>
+<p><strong>Tris:</strong> anyway, that’s what, yeah. Well, yes, that’s,</p>
+<p><strong>Robin:</strong> not immediately relevant, but yeah, pretty interesting.</p>
+<p><strong>Tris:</strong> Not immediately relevant. We are so language focused, and this has come into sharp relief for me quite personally. Recently, about five years ago, my dad had a very, very, very small, stroke, and he’s fine, but it did stop his ability to speak quickly.</p>
+<p>So he’s, he can, he really has to struggle to get out a few words. Otherwise, he’s fine. He carries on doing all the things he, he, he loves doing. He just can’t talk about them very much. And seeing how people who don’t know him interact with him is shocking. They talk down to him. They think he’s stupid. And it’s because we think that if you don’t, if you, how you speak, how fast you speak, what you say, your accent, all these things are bundled up into quite a lot of things, but specifically intelligence.</p>
+<p>And it is so ingrained that in English, what is the word for somebody who cannot speak?</p>
+<p>Dumb. word or unintelligence or at least it has been used for the same thing.</p>
+<p><strong>Robin:</strong> yeah,</p>
+<p><strong>Tris:</strong> They’re so dumb.</p>
+<p><strong>Robin:</strong> absolutely. Absolutely.</p>
+<p><strong>Tris:</strong> So, so the, when faced with something that can perfectly mimic speech and seemingly passes the Turing test, at least until you realize how to ask it, tricky questions. It is such a small step to think, oh, this has intelligence.</p>
+<p>Because things that don’t have speech, things that can’t speak aren’t intelligent. So things that can speak my language focused brain is telling me that this must be intelligence as well.</p>
+<p><strong>Robin:</strong> Yeah, absolutely. the thing</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p>about how,prejudiced people are towards somebody who is not able to communicate in a way that we associate with intelligence,I think that’s so very true and also speaks to why LLMs [00:40:00] will be harmful. Mm-hmm.</p>
+<p><strong>Robin:</strong> people take their polished language and they afford it far more authority than it should have. that</p>
+<p><strong>Tris:</strong> Oh yeah.</p>
+<p>matters when it’s then speaking about things that are. Biases in themselves. Mm. Well, scams.</p>
+<p><strong>Robin:</strong> that way of thinking about symbols is fascinating, but</p>
+<p><strong>Tris:</strong> Mm.</p>
+<p><strong>Robin:</strong> fundamental reason why LMS are not providing us with useful, useful meaning.</p>
+<p><strong>Tris:</strong> Because they weren’t designed to,</p>
+<p><strong>Robin:</strong> Yes.</p>
+<p><strong>Tris:</strong> the right, yeah. Yes, yes, yes. I, I, I agree. It is, it’s just a way of throwing that they, this, this, this, this example of the three levels of the, of words, the symbols and the actual reality. The, is a great way of throwing light onto making clear that LMS weren’t designed to make meaning,</p>
+<p><strong>Robin:</strong> Yes.</p>
+<p><strong>Tris:</strong> if they were, they wouldn’t have been trained on words.</p>
+<p>I.</p>
+<p>I see. I see. Yeah. Yeah, no, that’s a good point. Yeah. and it also helps to illustrate the point that we are miles away from creating any kind of ai. if we were to try and create AI that could do what a human does Yeah.</p>
+<p><strong>Robin:</strong> with generally understanding general novel problems and trying to figure out what a good solution to them would be if we were ever gonna try and do</p>
+<p><strong>Tris:</strong> Hmm.</p>
+<p><strong>Robin:</strong> which is what people claim that LMS can do, and they just can’t. If you were ever gonna try and do that. we have fucking so far to go. Like</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> we’re</p>
+<p><strong>Tris:</strong> What you need to do,</p>
+<p><strong>Robin:</strong> near it.</p>
+<p><strong>Tris:</strong> what, what? Like, what you’d have to do in, and I am not expert in, in the, in the topic is, is. The way we know how to create human level intelligence is to have a general purpose brain connected to our senses and teach it about the world by letting it experience the world. And then like question mark, profit like that, that’s makes just the, the, the, the amount of input that our brains digest every second</p>
+<p><strong>Robin:</strong> Yeah.</p>
+<p><strong>Tris:</strong> is unimaginable to me.</p>
+<p><strong>Robin:</strong> I actually found</p>
+<p><strong>Tris:</strong> That’s how to do it.</p>
+<p><strong>Robin:</strong> you watch, were you fan of Westworld?</p>
+<p><strong>Tris:</strong> I am aware of it. I have not yet watched it, but I have played Fallouts four, which is, you know, partially similar.</p>
+<p><strong>Robin:</strong> this may be related. I don’t know. and I don’t think I’m spoiling it, but you are aware that Westworld contains,robotic people that, are supposed to have,the fabled, independent thought, Ability for independent thought and to act as</p>
+<p><strong>Tris:</strong> Right, and</p>
+<p><strong>Robin:</strong> right?</p>
+<p><strong>Tris:</strong> have I got it right that, that some of them, or all of them or a category, think they’re human or do they know they’re</p>
+<p><strong>Robin:</strong> no.</p>
+<p><strong>Tris:</strong> not human?</p>
+<p>yeah. Yeah, exactly. Okay.</p>
+<p><strong>Robin:</strong> Yeah. Same as four. Four. Got it.</p>
+<p>and I don’t think I’m giving you a big spoiler here, but the theory behind what creates that in Westworld, which I thought was quite interesting, it’s this complete thought experiment stuff and not to be taken seriously,</p>
+<p><strong>Tris:</strong> Cool.</p>
+<p><strong>Robin:</strong> Yeah.</p>
+<p>I thought it was quite interesting is the theory, is that the thing that really gives a artificial brain the experience to be able to unlock that consciousness. Is suffering is like you. so the horrific theory of Westworld is that you take these robots, you put them in situations where they’re going to be abused by humans a long time over and over again. And then</p>
+<p><strong>Tris:</strong> Whoa,</p>
+<p><strong>Robin:</strong> they end up developing consciousness because of, because the level of sort, of richness of experience that they get through the trauma is basically what creates this consciousness, which I is horrifying as an idea. And also I find it fascinating personally, I dunno,</p>
+<p><strong>Tris:</strong> that is amazing. Is this, are, are the, are the creators of Westworld Buddhist, because isn’t that one of the four noble truths that the, that suffering is like an inherent part of la I, forgive me, I I’m not, I’m don’t remember my, my Buddhist education, but like, isn’t that one of the four core pillars of, of Buddhism is that suffering is like</p>
+<p>God incredible. yes. the, look up the four noble truths. What,</p>
+<p><strong>Robin:</strong> one,</p>
+<p><strong>Tris:</strong> is it?</p>
+<p><strong>Robin:</strong> this is Wikipedia, is dka, I dunno if I’m pronouncing that Not being at ease. Suffering from Duch star, standing unstable DKA is an innate characteristic of transient existence. Nothing is forever, and this is painful.</p>
+<p><strong>Tris:</strong> I mean, no arguments there, but</p>
+<p><strong>Robin:</strong> I</p>
+<p><strong>Tris:</strong> like,</p>
+<p>spot on. I dunno what that means though.</p>
+<p><strong>Robin:</strong> wonderful.</p>
+</section>
+  <hr />
+  <!-- Post Taxonomies -->
+
+  <!-- Post Nav -->
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https://decapsulate.com/episodes/6/" accesskey="."
+    ><span>De-platforming and Techno-Feudalism</span><span class="ml-1.5">&#8250;</span></a>
+</nav>
+
+  <h3 id="discussion">Discussion</h3>
+  <!-- Comment -->
+<div class="giscus mt-12""></div>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="NamtaoProductions/decapsulate.com"
+  data-repo-id="R_kgDOPLQ6JQ"
+  data-category="Episodes"
+  data-category-id="DIC_kwDOPLQ6Jc4Cs67B"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="dark"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async
+></script>
+
+  <!-- Begin Page End inject -->
+  
+  <!-- End Page End inject -->
+</article>
+
+  </main>
+  <!-- Footer -->
+<footer class="mx-auto flex lg:mt-5 max-w-3xl flex-wrap items-center px-4 py-3 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+  © <time datetime="2026">2026</time> <a href="https://www.namtao.com">Namtao Productions</a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/deed">CC BY-SA 4.0</a>
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <span class="mr-6 lg:ml-6">
+      This site does not use cookies
+    </span>
+  </div>
+  <!-- Begin Footer inject -->
+  
+  <!-- End Footer inject -->
+</footer>
+
+  
+    <!-- Mermaid -->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  function initMermaid(isDark) {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      themeVariables: {
+        darkMode: isDark
+      },
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  initMermaid(document.documentElement.classList.contains("dark"));
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+</script>
+
+
+  <!-- Begin Body End inject -->
+  
+  <!-- End Body End inject -->
+</body>
+
+</html>

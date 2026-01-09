@@ -1,0 +1,536 @@
+<!doctype html>
+<html class="not-ready lg:text-base overflow-y-scroll scroll-pt-14" lang="en">
+
+<a rel="me" href="https://namtao.com/@decapsulate"></a>
+<meta name="fediverse:creator" content="@decapsulate@namtao.com">
+
+<head prefix="og: https://ogp.me/ns# article: https://ogp.me/ns/article#">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="generator" content="Zola" />
+  <title>Rediscovering the Old Internet, Rethinking Unit Testing, and Navigating the Creator Economy | Decapsulate</title>
+  <meta property="og:site_name" content="Decapsulate" />
+  <meta property="og:title" content="Rediscovering the Old Internet, Rethinking Unit Testing, and Navigating the Creator Economy" />
+  <meta name="description" content="Robin talks about the perils of Unit Testing, Tris gives advice to new creators, and both reminisce about The Good Old Days and realise they never left." />
+  <meta property="og:description" content="Robin talks about the perils of Unit Testing, Tris gives advice to new creators, and both reminisce about The Good Old Days and realise they never left." />
+  <meta property="og:url" content="https://decapsulate.com/episodes/4/" />
+  <link rel="canonical" href="https://decapsulate.com/episodes/4/" />
+  <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="2025-09-02T00:00:00+00:00" />
+  <link rel="alternate" type="application/atom+xml" href="https://decapsulate.com/atom.xml" title="Decapsulate | Atom" />
+  <link rel="alternate" type="application/rss+xml" href="https://decapsulate.com/rss.xml" title="Decapsulate | RSS" />
+  <link rel="alternate" href="https://decapsulate.com/decapsulate-mp3.xml" title="Decapsulate | decapsulate-mp3.xml" />
+  <link rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/deed" />
+  <!-- Begin Head inject -->
+  
+  <!-- End Head inject -->
+  <link rel="stylesheet" href="https://decapsulate.com/main.min.css?h=fc65ba308cf36d3ba82c" />
+  <style>
+  :root{--bg: #f4f4f5; --header: #e4e4e7; color-scheme: light;}
+  :root.dark{--bg: #18181b; --header: #27272a; color-scheme: dark;}
+  </style>
+  <meta name="theme-color" data-light="#e4e4e7" data-dark="#27272a" content="#e4e4e7" />
+  <link rel="icon" type="image/x-icon" sizes="16x16" href="https://decapsulate.com/favicon.ico" />
+  <link rel="apple-touch-icon" type="image/png" href="https://decapsulate.com/apple-touch-icon.png?h=a564990247a6f24c7669" />
+  <link rel="icon" type="image/png" href="https://decapsulate.com/android-icon.png?h=a6d34a87d95eeffaa655" />
+  <script src="https://decapsulate.com/js/linkita.min.js?h=1dd3ed42fc674277bc34"></script>
+  <script src="https://decapsulate.com/js/linkita-search.min.js?h=698547b4b081d012c661"></script>
+  <link rel="stylesheet" href="https://decapsulate.com/katex/katex.min.css?h=19095127357ed6d29fe0" />
+  <script defer src="https://decapsulate.com/katex/katex.min.js?h=e8d885505949f3a5f4ab"></script>
+  <script defer src="https://decapsulate.com/katex/contrib/auto-render.min.js?h=bb53eb953394531aae36"></script>
+  <script>document.addEventListener("DOMContentLoaded", window.linkita.initKatex);</script>
+  <!-- Begin Head End inject -->
+  
+  <!-- End Head End inject -->
+
+</head>
+
+<body class="text-black duration-100 ease-out bg-[var(--bg)] dark:text-white">
+  <!-- Header -->
+<header class="bg-[var(--header)] fixed top-0 z-40 mx-auto min-h-[3.25rem] w-full header-icons">
+  <div class="mx-auto w-full max-w-4xl p-2.5 lg:flex lg:justify-between">
+    <div class="flex justify-between">
+      <div class="flex items-center min-h-8">
+        <a title="Go to home page" accesskey="!"
+          href="https://decapsulate.com/" class="text-2xl font-semibold">Decapsulate</a>
+        <button type="button" title="Switch color scheme" accesskey="$"
+          onclick="window.linkita.toggleDarkMode();" ondblclick="window.linkita.resetDarkMode();"
+          class="btn-dark ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover dark:invert [background-image:var(--icon-theme-dark)] dark:[background-image:var(--icon-theme-light)]"
+        ></button>
+        <button type="button" title="Search" accesskey="/"
+          onclick="window.linkita.toggleSearch();"
+          class="btn-search ml-4 h-6 w-6 shrink-0 cursor-pointer text-[0] bg-center bg-no-repeat bg-cover [background-image:var(--icon-search)] dark:invert"
+        ></button>
+        <script>window.linkita.initSearchButton({ scripts: ["https://decapsulate.com/elasticlunr.min.js", "https://decapsulate.com/search_index.en.js"] });</script>
+      </div>
+      <div title="Menu" role="button" accesskey="+" tabindex="0"
+        class="btn-menu relative z-50 flex h-8 w-8 shrink-0 cursor-pointer flex-col items-center justify-center gap-2.5 lg:hidden"
+        onclick="window.linkita.toggleHeaderMenu();"
+        onkeydown="(event.keyCode == 13 || event.keyCode == 32) ? event.preventDefault() || window.linkita.toggleHeaderMenu() : true;"
+      ></div>
+    </div>
+    <nav class="flex w-full items-center lg:w-auto">
+      <menu
+        class="nav-wrapper flex w-full flex-col py-2 lg:w-auto lg:flex-row lg:self-center lg:py-0">
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://decapsulate.com/subscribe/"
+          >Listen</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://decapsulate.com/about/"
+          >About</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://github.com/NamtaoProductions/decapsulate.com/"
+          >Github</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://github.com/NamtaoProductions/decapsulate.com/discussions"
+          >Chat</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://patreon.com/decapsulate"
+          >Patreon</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://www.teepublic.com/user/decapsulate"
+          >Store</a>
+        </li>
+        <li>
+          <a
+            class="primary-link block py-2 text-center text-lg font-medium lg:px-3 lg:py-0"
+            href="https://decapsulate.com/tags/"
+          >Tags</a>
+        </li>
+      </menu>
+      <!-- Begin Header Nav inject -->
+      
+      <!-- End Header Nav inject -->
+    </nav>
+  </div>
+</header>
+
+  <!-- Begin Body Start inject -->
+  
+  <!-- End Body Start inject -->
+  <main class="prose prose-neutral relative mx-auto min-h-[calc(100%-4rem)]
+    max-w-3xl break-words px-4 pb-12 pt-28 lg:pt-32 dark:prose-invert prose-pre:rounded-lg prose-img:rounded-lg">
+      <!-- Search -->
+<div id="linkita-search-wrapper" class="hidden">
+  <ul id="linkita-search-results"></ul>
+</div>
+
+    
+<article>
+  <!-- Begin Page Start inject -->
+  
+  <!-- End Page Start inject -->
+  <header class="mb-16">
+    <h1 class="!my-0 pb-2.5">Rediscovering the Old Internet, Rethinking Unit Testing, and Navigating the Creator Economy</h1>
+    <!-- Page Info -->
+<div class="text-sm antialiased opacity-80"><time
+      datetime="2025-09-02T00:00:00+00:00">2025-09-02</time><span
+        class="mx-1">&middot;</span>
+  <time
+    datetime="PT3191S">
+
+    53&nbsp;min</time>
+</div>
+
+  </header>
+  <!-- TOC -->
+
+  <!-- Content -->
+  <a href="#discussion">skip to discussion</a>
+  <section><p><audio controls src="/4.mp3"></audio></p>
+<blockquote>
+<p>Robin talks about the perils of Unit Testing, Tris gives advice to new creators, and both reminisce about The Good Old Days and realise they never left.</p>
+</blockquote>
+<h2 id="book-chapters">📖 CHAPTERS</h2>
+<ul>
+<li>00:00 <a href="https://decapsulate.com/episodes/4/#the-old-internet">The old internet</a></li>
+<li>26:43 <a href="https://decapsulate.com/episodes/4/#unit-testing-and-calcified-codebases">Unit Testing and Calcified Codebases</a></li>
+<li>42:35 <a href="https://decapsulate.com/episodes/4/#the-dangers-of-being-a-youtuber">The dangers of being a YouTuber</a></li>
+</ul>
+<h2 id="link-links">🔗 LINKS</h2>
+<h3 id="ours">Ours</h3>
+<ul>
+<li><a href="https://robinwinslow.uk">https://robinwinslow.uk</a></li>
+<li><a href="https://noboilerplate.org">https://noboilerplate.org</a></li>
+<li><a href="https://lostterminal.com">https://lostterminal.com</a></li>
+<li><a href="https://modemprometheus.com">https://modemprometheus.com</a></li>
+<li><a href="https://phosphenecatalogue.com">https://phosphenecatalogue.com</a></li>
+</ul>
+<h3 id="external">External</h3>
+<ul>
+<li><a href="https://rubyonrails.org/">Ruby on Rails</a></li>
+<li><a href="https://37signals.com/">37signals</a></li>
+<li><a href="https://hey.com/">HEY.com</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Brotli">Brotli (Wikipedia)</a></li>
+<li><a href="https://craphound.com/">Cory Doctorow</a></li>
+<li><a href="https://obsidian.md/">Obsidian</a></li>
+<li><a href="https://ar.al/2020/08/07/what-is-the-small-web/">Aral Balkan’s “What is the Small Web?”</a>
+<ul>
+<li>Note: He doesn’t call it “Web Zero” as Robin suggested. That refers to various other things, none of them good.</li>
+</ul>
+</li>
+<li><a href="https://gemini.circumlunar.space/">Gemini Protocol</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Gopher_(protocol)">Gopher (protocol)</a></li>
+<li><a href="https://neocities.org/">Neocities</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Semi-Automatic_Ground_Environment">SAGE (Semi-Automatic Ground Environment)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Project_Mercury">Project Mercury (NASA)</a></li>
+<li><a href="https://makertube.net/">Makertube (makertube.net)</a></li>
+<li><a href="https://ko-fi.com/">Kofi</a></li>
+<li><a href="https://www.youtube.com/@nicolevdh">Nicole van der Hoeven’s YouTube</a></li>
+<li><a href="https://pluralistic.net/">Cory Doctorow’s blog</a></li>
+<li><a href="https://www.youtube.com/watch?v=6QFwo57WKwg">MC Frontalot - Titans of Industry</a></li>
+</ul>
+<h2 id="adult-credits">🧑 CREDITS</h2>
+<p>Decapsulate is a NAMTAO Production (namtao.com)</p>
+<p>It is hosted by:</p>
+<ul>
+<li>Tristram Oaten (<a href="https://mastodon.social/@0atman">https://mastodon.social/@0atman</a>)</li>
+<li>Robin Winslow (<a href="https://union.place/@nottrobin">https://union.place/@nottrobin</a>)</li>
+</ul>
+<p>This work is BrainMade (<a href="https://brainmade.org">https://brainmade.org</a>)</p>
+<h1 id="transcript">Transcript</h1>
+<h2 id="the-old-internet">The old internet</h2>
+<p><strong>Tris:</strong> [00:00:00] You know what I mean by the old internet, don’t you, Robin?</p>
+<p><strong>Robin:</strong> Yeah. It was probably about 2005, wasn’t it?</p>
+<p><strong>Tris:</strong> I dunno. I don’t wanna be, uh, you know, old man shouts to cloud about it. I watched the keynote to Rails World 2024 by David Meyer Hanson, the creator of Ruby on Rails. And it wasn’t intentionally a call to action, but it felt to me personally, like a call to action.</p>
+<p>Uh, DHH was saying how you don’t have to use any of the bullshit that modern web development. Is lumbered with, you don’t have to bundle and compile all of your JavaScript. You don’t have to bundle and compile all of your CSS. You don’t have to use a complex reactive framework to compose, uh, reactive HTML components and then render them out into HTML.</p>
+<p>You can just have some HTML with simple templating. Some JavaScript with native modules, native methods, and some native CSS, which now has enormous. Functionality in the actual old internet, we didn’t have a lot of the features like CSS variables and the ability to have more complex native functionality.</p>
+<p>We had to use pre-process for everything. The latest version of JavaScript hadn’t got to all of the browsers. So what DHH was saying with all this is that if you were satisfied with web development 10 years ago, all of that is now native in the browser today. You are the front end or the front ender of the two of us.</p>
+<p>Does that ring true to you?</p>
+<p><strong>Robin:</strong> Right. After having actually watched this video, I think I remember you talking about it in our chat group and there were a bunch of things I hadn’t realized Were now native, right? The nesting of CSS. So to me that was one of the big powerful things that SAS gave you. And I, I have the impression that lots and lots of people are still doing it with SaaS under the assumption that.</p>
+<p>You can’t do it natively, but it works natively. As in if you want to have like a an H one inside a section and you want to give the section some sky styles and then you want to give the H one some styles, you can just nest the H one tag inside the section tag. Right.</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> Which you, you, you never used to be able to do and you needed, you needed SaaS for,</p>
+<p><strong>Tris:</strong> this is exactly what I’m talking about.</p>
+<p>Like we’ve forgotten or we’ve not tried. The native functionality of the browser is even as web developers, we’ve just assumed that we’ve always used these meiers and bundlers and compilers, so we always will have to. Now, there are plenty of future functionality. That we still might want to use compilers and bundlers for, but DHH is like, we’ve reached this threshold, this watershed moment where you, for 99% of websites don’t need any of that.</p>
+<p>You can just write like the old days, some HTML, some JavaScript and some CSS, native CSS, his example. Was at 37 Signals they’ve recently built last couple of years. They’ve recently built hey.com, which I think is like email for people with A DHD and autism, which is why I love it, and it’s really, really good.</p>
+<p>He made a wild statement at In This Rails World keynote. He said, the JavaScript we write is the JavaScript that your browser receives. It’s a one-to-one. There’s no like line framework. Yeah, there’s no framework but there, but there’s not even any bundling up. So if you get an error on line five, it’s actually line five on the developer’s machine as well as in production.</p>
+<p>Yeah. Like it’s line five of this file. Yeah. Which is wonderful.</p>
+<p><strong>Robin:</strong> I’ve always wanted that and I’ve always been frustrated by all of these different tricks that people use to try and optimize their their HTML putting like JavaScript at the end and all this kind of thing. And I was excited when HTTP two came along because.</p>
+<p>On the face of it, it looked like it was going to solve a lot of that stuff because, well, first of all, you can. Hold a connection open and it will send stuff through it, and then also you can write your framework so that it will bundle the resources needed by a webpage along with the webpage. It turned out, in fact, the configuration of all of that to work really neatly was quite difficult.</p>
+<p>It might be that since I was looking into it, it’s actually got smarter, but I always felt that there was a significant value in literally just sending people. The most readable form of the JavaScripts and all that kind of thing because everything now is probably compressed with bro anyway, when it’s sent over an HTP connection.</p>
+<p>And what is that? Oh, uh, you are aware that like HTP traffic used to be gzipped, but broley is the more modern compression algorithm rather than gzipped. So browsers send a pretty standard exception coding set. So it’s a sort of hierarchical set of encodings that accept, and I think it’s now basically the same across all browsers.</p>
+<p>And it has broadly as the top. Most recommended compression algorithm, which is [00:05:00] therefore presumably what most servers support as well. Gotcha. And when you compress like a file with a bunch of spaces in it, you make it a lot smaller in these compression algorithms. Mm. It’s never gonna be as good. This is the thing, it depends how obsessed you are with performance because while all these things have definitely made it a lot better, if you really obsess over it and you totally minify your JavaScript so that it replaces your variable names with single character ones and everything, that is always gonna be a little bit smaller.</p>
+<p>And if you like bundle up your JavaScript and you put it in exactly the right place in the HTML so that it requests it at just the right moment or whatever, if you really obsess over it, you’re definitely going to squeeze more. Performance out of it, but it might well be, and maybe this is what DHH was saying, that we’ve got to a point where it really doesn’t matter anymore.</p>
+<p>You don’t need to do that because the baseline way that it handles it is good enough. I believe so.</p>
+<p><strong>Tris:</strong> Well, that’s my takeaway from the video is that we used to bundle all of our, say JavaScript into a single file and then minify it and then send it across the line. But you get so close to the same level of compression by doing nothing today.</p>
+<p>So just don’t do anything and what you will get for your payment of a very slight increase in bundle size, or rather in request response size, is you will get the old internet back and unlocked. You will allow the people viewing your website. To kind of poke around and see what you were doing and learn what you were doing and say, oh, this is very cool.</p>
+<p>I like what they’re doing here. Lemme just look at the source code here. Open up the inspector, see what’s going on. And it’s not garbage. Minified. Yeah. Challenging to, to, to use. It’s the old. Internet, which is how you and I, I suspect how we learned HTML, JavaScript and CSS by pulling apart the source code of websites that we were seeing and going, oh, what are they doing here?</p>
+<p>Lemme have a little look here. That’s certainly how I learned front end. How about you?</p>
+<p><strong>Robin:</strong> Yeah, no, I completely agree. Like for me, becoming a web developer, it was so magical. To discover that it was all just H TM L text and these other things, right, that you could very easily understand. You could very easily imagine that you could just open up in Notepad and write your own version and then send, send it to a browser and it would display as this magical website.</p>
+<p>And I just absolutely loved it. It’s interesting. I didn’t think that was what you were going to mean by the old internet, because the other interpretation of the old internet would be sort of like internet one, right? Like before, before everything was dynamic. Glitzy single page application.</p>
+<p>Mm.</p>
+<p>Which is a bit related, but it’s not quite the same point.</p>
+<p>Yes, you are. You are talking about the internet that is inspectable, like readable. It’s all the same. Yeah,</p>
+<p><strong>Tris:</strong> it’s all the same. I wanted to get on onto that for sure. Mm. I I was hoping that maybe you and I could brainstorm what we mean by the old internet and I’ll start immediately, like the best kind of the web today with today’s technology.</p>
+<p>Keeping all of the good things that we’ve lost because the whole internet at the moment is five websites with screenshots of the other four. What have we lost,</p>
+<p><strong>Robin:</strong> stolen installment from Cory Doc, I think.</p>
+<p><strong>Tris:</strong> Is that Cory Doc? Oh my God. Ah, that’s so good. Such a good turn of Frank. Yeah. But like things like URLs actually working instead of a web app, that the URL never changes and it’s just like this dynamic single page thing that never moves around.</p>
+<p>Like URLs are great. I love URLs. You love URLs? Yeah. URLs are fantastic. Absolutely. They give us, as consumers of the website so much power.</p>
+<p><strong>Robin:</strong> Yeah. And this is what Obsidian is trying to be built around. I love. Like writing, since I arrived at my new company, I’ve written there’s probably more documentation than than anyone there has ever written before.</p>
+<p>Um, and as I do it, I’m like adding links all over the place. And this is also what I do when I’m like reviewing pull requests, right? I’ll describe in quite minute detail why I think a different structure for this class would be better. And then I’ll link over to a Wikipedia article about a particular concept.</p>
+<p>And I think just. Enriching the meaning of what you are writing with a link off to another place that has other information. It’s just so cool and it’s the thing that the web fundamentally gave us that you never had before. But before we move on from it, I do really want to say that this thing that you are saying about the fact that there’s a value to just being able to open your JavaScript and just be able to read it exactly as it was written, is something that I have cared about deeply.</p>
+<p>I’ve so struggled to find anybody around me in web development teams that also cares about it, right? Like it’s the fundamental open source ness of the internet, isn’t it? It’s that anybody can just open it. You can go view source, and it will make sense to you if you just get past the fact that there’s some weird angle brackets here and there.</p>
+<p>Yeah.</p>
+<p>And it’ll make sense to you unless somebody’s gone and done the stupid thing of like making it all into a one line document with like, yes. You know? Like, yeah,</p>
+<p><strong>Tris:</strong> as you say, it’s naturally open source. If I’ve got an app on my phone, it’s completely opaque to me. Like I can use it, but it’s just this blob of application and even a developer cannot.</p>
+<p>Or like a security researcher, like [00:10:00] someone who has the best knowledge of like disassembly and how to get into the internals of these things just can’t really give you much. You can like pull out some strings, pull out a bit of information, but nothing really, and that’s all by design. Whereas the web is view source by design.</p>
+<p>Yeah. Which is just gorgeous.</p>
+<p><strong>Robin:</strong> Yeah. I think I particularly remember getting into arguments about this when people were raving about web assembly. And I was saying. It’s great in all. Mm-hmm. But a big downside is the fact that it’s hiding away from you. A binary.</p>
+<p><strong>Tris:</strong> Yeah.</p>
+<p><strong>Robin:</strong> Right. And you can’t, you can no longer tell how a thing is written or what’s going on.</p>
+<p>Yes.</p>
+<p><strong>Tris:</strong> Yeah. Uh, probably you were talking to me because I would’ve been talking about rust and web assembly and how it’s fantastic, but you sure can’t view source. You have to rely on the social contract of open source software where you present. The user with a binary, and you also say, here is the source code for this binary you’re looking at.</p>
+<p>It’s not as tight as just, Hey, here’s the source. Yeah, your browser will run this.</p>
+<p><strong>Robin:</strong> I was just trying to find these websites. It seemed to have disappeared. But the other thing that you could mean by the old internet is, so there’s this concept called the lean web. Which doesn’t seem to exist as much as it used to, or I just can’t find it.</p>
+<p>And then our role, Balkan,</p>
+<p>mm-hmm.</p>
+<p>Coined this phrase Web Zero, which sort of means the same thing ish. It’s all this point that single page applications are over engineered. They obscure everything away from you. They try and. Reimplement things that Browse already does. Yes. Uh, and now suddenly every webpage is like 10 megabytes and it’s using up everyone’s bandwidth and it makes everything slower.</p>
+<p>And you need all this CPU to be able to run all the complicated JavaScript frameworks. Mm-hmm. And it’s also related to, Corey talks about this very powerfully, he calls it the surveillance lag. Mm-hmm. Every time you load a webpage, it then has to like. Load all the ad tracking stuff before it can do anything useful.</p>
+<p>Ah, and then he describes it as, what am I bid for? You know, one Tris Osen and he goes and does it. But yeah, like fundamentally, because we have this surveillance capitalism world, it means that every web developer now has to include all of these tools. So the first thing talking about Web Zero, ’cause I’ve always tried to write my website as simply as possible.</p>
+<p>And if you go and look at it, hopefully you’ll see that it’s as simple as possible and the big. Decision that was difficult to make, but once I made it, I felt a lot lighter was not to include Google Analytics or any equivalent client side analytics tracker.</p>
+<p>Mm-hmm.</p>
+<p>Because you should, in theory, be able to track that purely based on server side logs, right?</p>
+<p>You don’t need Yes, exactly. You shouldn’t need to be hijacking the reader’s computer. To make them do extra compute and send off extra requests to random websites so that you can see that they saw your page.</p>
+<p><strong>Tris:</strong> No, indeed, and it’s not just random websites, it’s 98% of the internet is sending telemetry tracking data to Google.</p>
+<p>Mm. That’s the real problem, technically a problem for the users of the website that you are causing them to be a little bit slow. That’s the technical problem. The moral problem is participating in global surveillance.</p>
+<p><strong>Robin:</strong> Yeah.</p>
+<p><strong>Tris:</strong> Horrifying. When I worked at the UK Government Digital Service, we had to upgrade from an old version of Google Analytics to a new version of Google Analytics on some site, and I was like setting my desk on fire virtually to say, how about we don’t, how about we upgrade to nothing?</p>
+<p>How about we upgrade to not opting in to Google surveillance of the population of the United Kingdom when they’re trying to just like find out some tax law or some benefits laws or like whatever. Like it’s just seemed unbelievably immoral to me. And even then in an environment with really smart people who care about privacy, I was not able to do it.</p>
+<p>Yeah. That, because the answer is Google have a monopoly on analytics, and if you want analytics, you have to use Google, and no one else is even in the game really.</p>
+<p><strong>Robin:</strong> But what they’re actually doing isn’t very complicated. It’s not like one of these other things where there’s some kind of monopoly of scale or network effects where actually you could send your analytics anywhere and you’d still get a nice graph that tells you what you want to know, right?</p>
+<p>Like there’s nothing particularly special. The only thing about Google Analytics is that it’s free.</p>
+<p><strong>Tris:</strong> Agree, there is something you’re missing every. Analytics platform and third party service has an integration with Google Analytics and assumes it’s the default, doesn’t have any integration with your weird analytics that you’ve just built.</p>
+<p>It’s all Google Analytics focused and the analyst, like somebody who is like specialist in this, feels that they are trained. To be an expert in Google Analytics. I’ve never found an expert in Google</p>
+<p><strong>Robin:</strong> Analytics in my whole career.</p>
+<p><strong>Tris:</strong> [00:15:00] I delicately agree with you. I believe, I use the expression feels that they are yes, an expert like change.</p>
+<p>So changing that fundamentally changes their job they feel. Um, on encapsulate.com, perhaps you do the same on your site. Robin winslow.uk. We use CloudFlare and we use CloudFlare logs, which are entirely server side. Or rather, they’re not on the client’s machine. They’re all the, the DNS level and I, they don’t give you such rich analytics as Google does.</p>
+<p>Like how many times did they use a mouse over this or give a heat map of where they were clicking and looking firstly, that’s gross. Secondly, no one is ever, in my experience of people do using their software, giving me anything useful to do with that. Do you get 99% of the way there with. What pages are users going to?</p>
+<p><strong>Robin:</strong> This could take us in a tangential direction, which could be a future topic perhaps, which is about just the. The tendency to just collect data for the sake of it, right? Mm-hmm. The theory is that you will look at the heat map data and you will use it to understand your users better, so you know that they’re scrolling this far down the page, they’re seeing this thing over here, and maybe some of the time it does get used for that usefully in some kind of way.</p>
+<p>But really what they’re trying to replace is like a good old fashioned user study where you actually deliberately go and observe your users using your website and note down what it is they get up to. Yeah. And those are really valuable, I believe, in usability research. I think it’s a very good thing, certainly, but I think this is a very poor man’s shadow version of it, and I think it tends not to lead to very good optimizations, but people collect the data in case it can help and there’s so much.</p>
+<p>That gets collected in that way, but I’m not gonna go too far down that track. It’s absolutely, it’s a diversion.</p>
+<p><strong>Tris:</strong> I’ll bring us back. I’ll bring us back to the original topic by saying that you don’t find the needles easier by making the haystack bigger. Yeah. And that’s what these tools do. Yeah. It’s incredible.</p>
+<p>Back to Web Zero, was it, you said? Although the old internet? Yeah. The reason I’m bringing this up is that I have a draft video. Called Welcome back to the internet. It’s my current draft. After speaking with you today. I might call it view source, but I think maybe the first one is good for that, or maybe the thumbnail can just be a stylized view source.</p>
+<p>That could be, that could be quite good. Yeah. I like both. Yes, I’ve noted them down and thank you, but there’s such a movement at the moment. In fact, the movement has gone so far as to there. There are some people who say, we need to forget the current web. Let’s make a new one. You might have heard of the Gemini Project, which is based on Gopher, or inspired by Gopher, which is just, you can think of it as a markdown browser, so really restricted syntax, just like seven things, bold, italic headings.</p>
+<p>Lists and numbered lists, that sort of thing. And a text a, a fairly plain text browser and it’s got links and it’s got embedded images and that’s it. That’s your lot. No CSS, which the creators perceive as being unnecessary Complexity, certainly no JavaScript, which we all might agree is often unnecessary complexity, but I think that actually goes too far.</p>
+<p>I think that belies a misunderstanding that we don’t have to throw away all of the web. To get back to the old web. There are communities like neo cities.org who are bringing back the old web. It sounds like. I hear you laughing. It sounds like you know neo cities.</p>
+<p><strong>Robin:</strong> Yeah, I mean like Neo cities is obviously a nostalgia project.</p>
+<p>Certainly. Which I think is, it’s nice, but it’s not where we’re going ’cause it’s where we’ve been and whatever comes in the future is gonna look a bit different. But I completely agree with you that I certainly hope that there’s a significant appetite for just rejecting all of the. Glitzy bullshit, pr, marketing, fanciness of these modern websites that are actually like stealing all your bandwidth and your CPU time and tracking you, surveilling you and trying to manipulate you, stealing your attention and all this kind of stuff.</p>
+<p>And I think everybody will relate to that message on some level. You know, you sit down on the sofa, you wake up an hour and a half later and you are like. Why did I just start doom scrolling? I didn’t want to. So I think that some level, there really is a huge movement of people that are really frustrated with this system.</p>
+<p><strong>Tris:</strong> Yeah, I think the message that I, I hope to give over with this video, welcome back to the internet, is that all of the, the good parts. It didn’t go away. They weren’t replaced. We just chose to use Facebook and Instagram and TikTok and IT and the app ecosystem. Now you might say that we were guided there by the delicate hand of Google and Apple who encourage this sort of closed, yeah, this closed approach.</p>
+<p>However, the old internet is still there. Email. Is still available. Websites, blogs, messaging apps [00:20:00] such as Telegram that use a real API and don’t clock you in. And you can use third party apps. You can make a watch app like it’s just as Wild West as it was in the nineties. And even Firefox for the moment is still here.</p>
+<p>You don’t have to buy into. Google’s domination of the front end of this, all of the browser. And as we discovered, they have recently enacted their 15 year plan, which is disabling the ability to install an ad blocker because they now feel that they are so. Well secure in their domination of the landscape.</p>
+<p>They’re so sure of themselves. Mm. You can just download new browser. It’s not legal. You can just have Firefox. I</p>
+<p><strong>Robin:</strong> fear that’s kind of true though, that they have won the domination. Like if we are really serious about this. Right. Okay. So I was aware in let’s say 2010 uhhuh, that there was a battle going on.</p>
+<p>Where mobile operating systems were trying to come in and replace the internet as the fundamental place for application development. Mm-hmm. And that this was the risk is that it it, it was a power grab by the companies that control my mobile phone operating systems. And at the time, I think I was probably young and naive enough to reassure myself that they weren’t gonna win for this reason or that reason, but I think they did win.</p>
+<p>If you think of it from the perspective of a mobile phone, right? We know that mobile devices are what most people use across the world.</p>
+<p>Mm-hmm.</p>
+<p>And on a mobile device, just think about the experience of using most web products versus an app. Mm-hmm. And it’s like, it’s been so impoverished, the web experience.</p>
+<p>That you’d kind of be crazy to expect that somebody would prefer to use webpages over a native app at this point. I feel</p>
+<p><strong>Tris:</strong> that is true, and we must fight to get away from it. Yeah, but the way is very clear. I run Firefox on my phone, quite a lot of the web apps that I use, sorry. Quite a lot of the mobile apps that are running on my phone are actually just a skinned browser.</p>
+<p>They’re just electro. I know.</p>
+<p><strong>Robin:</strong> I know.</p>
+<p><strong>Tris:</strong> And so actually there’s no resistance. To getting a web version of that app because we actually, it’s just written, but</p>
+<p><strong>Robin:</strong> it’s just, the thing is that because they run the os, they’ve got the ability to make things so annoying for you. So for example, right. There really is nothing better about the YouTube app than about YouTube through Firefox.</p>
+<p>’cause I also run Firefox on my, on my phone. And in fact there are massive benefits to running YouTube on Firefi. You subscribe to YouTube, so you probably don’t experience this pain. I don’t subscribe to YouTube. I</p>
+<p><strong>Tris:</strong> do not subscribe to</p>
+<p><strong>Robin:</strong> YouTube. Oh you don’t? Oh, okay. I get adverts. Okay, cool. Well then you are, um, yeah, if you run it in Firefox, you can swipe away Firefox and then you can swipe down from the top and you can press play in your little, you know, the little kind of like media is playing box that appears on your notifications.</p>
+<p>And then it will play in the background. And not only will it play in the background, it now won’t include adverts.</p>
+<p><strong>Tris:</strong> Yes, I did know that. Yeah, you can just play it in Firefox, hit the home screen and it plays in the background mark. Right.</p>
+<p><strong>Robin:</strong> But still, it’s a really annoying experience. I’ll be in the YouTube app.</p>
+<p>I’ll try and open a video and I will say open in Firefox and it will open Firefox and it’ll switch right back to YouTube because Firefox will remember that it’s supposed to use the YouTube app. There’s just so many 10 drills that try to push you and force you into the native app experience that it just feels like it’s so hard to.</p>
+<p>Persuade people to do anything else, you know?</p>
+<p><strong>Tris:</strong> Yes. But not impossible. Yeah. Yeah. I was there as I’m, as I believe you were in 2004 when Firefox 1.0 came out. And everyone who downloaded, maybe on the first day or in the first week or before it hit a million downloads or something like that, got a, uh, novelty PDF certificate that said, thank you for making Firefox possible, or something like that.</p>
+<p>And I still have that PDFI should print it out and display it proudly.</p>
+<p><strong>Robin:</strong> You should, yeah. Make a poster out of it.</p>
+<p><strong>Tris:</strong> I’m telling you this because we have been here before. You and I, and many of our listeners grew up in the absolute domination of Microsoft’s Internet Explorer, which is now a punchline and a joke and an afterthought.</p>
+<p><strong>Robin:</strong> Yeah.</p>
+<p><strong>Tris:</strong> We are in a better place at the moment than we were then because Firefox already exists, so I believe we can get back there. The cycle of the wheel of history can keep turning.</p>
+<p><strong>Robin:</strong> Yeah, I think so. I mean, I, I think particularly with ai, there will come a point at least where the new generation completely rejects.</p>
+<p>That whole bloated mess in some way. Oh yeah. And and it will look like the pieces that are like of the old stuff probably. And they’ll build a whole new movement out of it. And I’m done. I’m totally there for it. I guess I’m a bit jaded at this point.</p>
+<p><strong>Tris:</strong> Yeah. I mean, it sounds like you should go work for Ruby on Rails or 37 Signals or something that [00:25:00] sounds like it’ll be a perfect match for you.</p>
+<p>The subtitle of the video of DHHS Rails World Video to bring it all back home Yeah. Is it’s fun to be competent. And that comes from a halfway through the video where DHH said, when you are building real JavaScript instead of JavaScript, which is maybe in a different framework that makes things different, not better or worse, just different.</p>
+<p>And when you are writing real CSS, not some pre-processing framework, and when you’re writing real HTML, not some component framework or I’m not sure if he mentioned utility CSS, um. Like tailwind, but it was definitely hinting at it. Instead of learning all of those frameworks, you can just learn HTML, JavaScript and CSS because it’s fun.</p>
+<p>To be competent. It’s fun to actually do it yourself. Yeah. If you are a backend developer, it’s fun to learn a bit of JavaScript ’cause it’s not the nineties JavaScript’s great. And more importantly, the browser is really great.</p>
+<p><strong>Robin:</strong> Yeah, I think, I mean, what you’re kind of hinting at there is, I’m talking about the social problem of the fact that these, these monopolies have won, they control the population basically at this point.</p>
+<p>What I hear in your response is we need to win back the hearts and minds of the people who are building the tools. I think that’s exactly right. That’s the way to do it. You remember that being a web developer in the two thousands was inspiring, right? And in a way that that has just gone, nobody is now proud to be working for Google or working for Meta, or working for like, they’re just not.</p>
+<p>No. And that’s got a huge opportunity in it, I hope. I hope so too.</p>
+<h2 id="unit-testing-and-calcified-codebases">Unit Testing and Calcified Codebases</h2>
+<p><strong>Robin:</strong> I’ve been a little bit obsessing about this testing thing ’cause it’s come up a couple of times at work. I think that the development community has gone through a significant evolution when it comes to testing code bases, uhhuh. The original version of testing that is very useful for a technical system is functional testing where you define your functional requirements.</p>
+<p>And then you make sure your requirements are met. That could be done completely manually. You’ve written down a document where you say it needs to do this, and then you have somebody click through the system and just say, yeah, it does that,</p>
+<p><strong>Tris:</strong> right? You might even find in a, like a government contract, you might have acceptance criteria for the contract.</p>
+<p><strong>Robin:</strong> Right. Exactly. Exactly. So then unit testing is a very old term, and it started right back at the beginning of software development. I mean, apparently the first recorded usage of it is in 1956. It was in the US Navy’s Symposium on advanced programming methods for digital computers. That’s it. Then the SAGE Project and the Mercury Project.</p>
+<p>This was at the point of program development where we’re still like using punch cards and things like that. It was a revolution where you were starting to build. A system that might actually make use of pieces that might have been written in a couple of different teams. We can have a test that will make sure the thing that team is providing actually definitely works before we use it in this other system.</p>
+<p>So unit in its original meaning had this enabling modularity philosophy behind it. Right now it’s my feeling that that’s not what people understand unit testing to mean anymore. The TDD movement became a cudgel to beat people with. There are a lot of code bases around that have been weighed down by the tests.</p>
+<p>Changing anything will break everything all over the place. If I move this hair over to the left two centimeters, then the whole thing’s gonna collapse, so I’m not gonna do it. We agree that what I believe is the spirit of the original meaning of the term unit test. We should be testing at the interface.</p>
+<p>Mm-hmm. If you write a system, you want it to have tests that are checking, that the actual promises are met. A simple version would be testing an API, but API has a very clearly written API specification that says you can make a post request over here. It has these parameters, you’ll get this in response.</p>
+<p>These are the status codes you can expect back, et cetera. Right. And that is then something that’s very, very easy to test and the best version. Of a fully tested code base would be an API, where you’ve written tests that cover every single one of these specified endpoints that you’re supposed to be delivering and make sure that they all pass.</p>
+<p>So one reason why you might want a tune test at a lower level would be because there’s an internal module. So for example, you might have a model layer that transforms model objects into database reads and database rights. At that point, you might say, we’re gonna formally define its interface to say it provides these different model classes, and they all have these different.</p>
+<p>Actions you can take on them. Once you’ve then formalized that, now you can write tests around that which make sure that that model layer absolutely works right. The thing that frustrates me over and over again is I see people writing tests very deep in the application, so they’re using a whole load of internal.</p>
+<p>Private stuff. Yeah, private stuff. And every single little function is coupled to another test. So I think two software engineers this shift in thinking would make a huge difference. Now, I [00:30:00] originally brought this topic to you mm-hmm. As a sort of criticism of test driven development, and we got into a little bit of a back and forth.</p>
+<p>Yeah. Because you’ve had a very good experience with test of development and you, I sure have, think that your version of test of development is not incompatible with what I’m saying. Is that right?</p>
+<p><strong>Tris:</strong> Yes, absolutely. Yeah. The testing of the interface, the tests that run on CI and run on the server, like the tests that you share with your colleagues are very different to the tests that you write throughout your use of TDD in your discipline of writing code.</p>
+<p>A lot of the tests that you write as part of your. Red green refactor cycle. As you zoom in and hone in on the exact functionality that you intend to change, you intend to write. A lot of those are transient artifacts. They’re almost like compiled artifacts that are on your machine. They’re not, you’re not gonna commit them back up.</p>
+<p>No. No one else cares about those. They helped you do your job, and when they’re done, you discard them. They are not necessarily. At the level of the interface, which would be a good test to, a good unit test to check in. They are whatever level that makes sense to you. Maybe as you said, those coders that you’ve experienced, like coding way too low level or inside the private interfaces of modules or whatever, those are actually perfectly fine for TDD or they can be perfectly fine for TDD, but you don’t check them in</p>
+<p><strong>Robin:</strong> if you are gonna stop.</p>
+<p>With that attitude then wouldn’t a reasonable next step be to say, since I’ve written this test that tests this internal object that doesn’t matter to the external interface of this thing, why wouldn’t I check it in? Because what happens when I then want to evolve it later and I already have a test that could help me to do it?</p>
+<p><strong>Tris:</strong> Like the high level test should actually be testing what you’re actually trying to do. If you are not there yet, you can kind of get there.</p>
+<p><strong>Robin:</strong> Yeah. What I thought you were gonna say about TDD was that you transformed the test. So you’ll start by writing the smallest part of your solution, right? You’ll write a little bit of code and it will fail.</p>
+<p>Then you go and you change it a bit and it’ll pass, and you go back and you change your test and it’ll fail. And through the process of changing the test, you eventually end up at the. Interface test, but I think that’s not what you just said, so maybe you don’t think that that would happen.</p>
+<p><strong>Tris:</strong> I’m not sure if there are exactly hard and fast rules, and I think that in terms of like choosing the correct level of obstruction for your unit tests, it’s extremely tied to experience.</p>
+<p>What you described as getting frustrated that there were a lot of unnecessary tests down at the low level. It seems to me the difference between a senior or lead developer who has an understanding of like the whole system versus a junior or me or a lower experienced developer who is coming at it from the bottom up.</p>
+<p>Here’s a function. And then this function calls another function. They’ve got to like navigate their way up the abstraction layers, whereas someone who is more experienced sees the whole thing and sees, oh, well this is where you should put your tests very obviously. Whereas if you’re in the weeds, if you’re down in the if foundations of the program in the functions, then.</p>
+<p>You might not choose the right level due to experience.</p>
+<p><strong>Robin:</strong> Okay, so there’s two things that I want to focus on there. One is I don’t know that this is a junior, senior problem per se. I’ve definitely had lots of poor requests from experienced developers who are testing things that are far lower level than I think they should be.</p>
+<p>I think that it is a thing that you see juniors do more. But I think the reason you see juniors do it more is because it’s what they were taught, and then you only get the confidence to challenge the status quo when you’re a bit more senior. That would be the only way that I’d say it. It has a junior, senior cadence, because I would say that overall everybody, a junior or senior developer should ideally be handed a user story, right?</p>
+<p>They should ideally be handed a thing to solve that tells you what you are actually trying to change on the behavior of the whole system. The first thing to do is to say, what test would I then write? The test you would write is the thing that tests that the system has changed. I don’t think that it’s nuanced.</p>
+<p>I don’t think that it’s a thing that you can only learn with experience. I think it, it is sometimes difficult to hold the two perspectives in your head. You’re changing something in a small function and the actual effect is this outside effect. I don’t think choosing the level at which to do your test is nuanced.</p>
+<p>I think it is quite clear whether you’re testing from the interface level or you’re testing beneath it personally. And I think, and I think if you think it’s nuanced, then you might be not. Basically following the maxim that I’m trying to suggest that people should be following to make sure that the thing [00:35:00] is well tested and efficiently tested.</p>
+<p>Right. Do you see what I mean? Mm-hmm. ’cause I think the outside is obvious. Like with any, what is the maxim? Can you state it? Oh, tests from the interface, right? Interface tests. Well, I would’ve called it, right? Interface tests. Don’t write unit tests because I think what unit tests have now become. Is this sort of low level test, but that’s not very clear because I think the actual definition of unit test is more fuzzy.</p>
+<p>But it would be write tests at the interface and only write ’em against something that can be said to be a formal interface. I like it. You should write the book. I buy it. Oh, good. Good. Oh, well I’m glad you agree with it. I suppose if I was a little braver, I might press a bit harder on its compatibility with TDD, but I know that we had a, you know, I mean, do you really throw away, um,</p>
+<p><strong>Tris:</strong> what’s the refactor part of red green refactor?</p>
+<p>You are, you are refactoring your tests. You are refactoring your code, and so you’re not like deleting files. You are just evolving them and evolving them, and evolving them, and eventually your code is written up to the interface and the test is written up to the interface.</p>
+<p><strong>Robin:</strong> Oh, so you are saying it eventually transforms into an interface test</p>
+<p><strong>Tris:</strong> It Can I, I’m not.</p>
+<p>Saying so, so strongly, right. I’m not sure if that is a, if that is a rule.</p>
+<p><strong>Robin:</strong> The thing, well, I certainly am familiar with the fact that in every piece of development I would be trying out stuff. I would be checking it in the ways that I want to check it, and then the process I’ve gone through to do that.</p>
+<p>Very often bears only a vague resemblance to the PRI eventually submit. Right. That’s pretty common. Hmm. So I think that’s sort of what you’re saying is that you’re using, you’re using a test first approach as your discipline for creating the solution, and then there will always be a bit of a recrafting when you decide what you’re actually trying to propose into the central code base.</p>
+<p><strong>Tris:</strong> Yeah, absolutely. Like you might refactor your code to make it up to the standards that your team expects and uses, and you would do the same for your test.</p>
+<p><strong>Robin:</strong> Yeah, you push it up, the test fail, and then you’re like, oh, I gotta run format, and then you Right. Happens so often. I’m glad that you agree with all that.</p>
+<p>I think maybe you don’t agree with me on the problem. I see this as a quite significant problem that I can run into every day. Do you think it’s a problem? Do you understand why? I think it’s important to focus on it? Yes.</p>
+<p><strong>Tris:</strong> Slowing down speed of development. Yeah, there’s a, yeah, the code coverage fixation.</p>
+<p>Of dynamic languages has a lot to answer for, I think.</p>
+<p><strong>Robin:</strong> Yeah. But you can very easily achieve a hundred percent code coverage testing from the outside. Like I don’t think it, it precludes the idea of having a hundred percent code coverage at all.</p>
+<p><strong>Tris:</strong> It’s not as easy than doing it with unit tests or you doing it with bottom up tests.</p>
+<p>If you’ve got five lines in a branch of a if statement that are own, that aren’t covered, it’s a lot easier to like to say,</p>
+<p><strong>Robin:</strong> what function are those lines in? Yeah. And then you test the function. Exactly. Yeah. Yeah, yeah.</p>
+<p><strong>Tris:</strong> It’s cheating. But it’s yes. You know, show me how, you, tell me how you measure me and I will tell you how I will behave.</p>
+<p>That’s what we’re talking about here.</p>
+<p><strong>Robin:</strong> Yes. Yeah, exactly. I suppose I just feel that if you could be disciplined about doing it the way I’m suggesting, that’s actually far more valuable. If you discover that you haven’t tested 5% of your application, you now have to figure out why your interface tests haven’t tested that 5%, right?</p>
+<p>And then in that process, you might decide that 5% should be just discarded. You know what I mean? Absolutely. And that’s a really good thing.</p>
+<p><strong>Tris:</strong> It certainly is.</p>
+<p><strong>Robin:</strong> I suppose I feel that in enterprises. There are many, many code bases that just grind to a halt. They get old, they get crusty. No one knows how to run them.</p>
+<p>Everybody’s scared of breaking them. And then they just become this drain, this tech debt, this really complex piece. There’s like a feature request list as long as your arm, and no one’s paying attention to any of them because no one can actually work on the thing. Right? And that’s, I think, what I’m worried about, this death of code projects.</p>
+<p>And you need to keep it vibrant. You need to keep it active. And the way you do that is by keeping your tests away from. Stopping you from innovating and stopping you from changing your code. You do that by only testing the bit. You need a test, which is the actual function of the thing.</p>
+<p><strong>Tris:</strong> Uh, yeah, I couldn’t agree more.</p>
+<p>This is why I love rust, because there’s so little to test in rust, because the code is the test for 99% of the cases that you would otherwise have to write a unit test for in a language, say like Python or JavaScript, like you don’t. Like every single rust project, the code coverage is 100%. Like it’s a compiled language.</p>
+<p>There are no deadlines, there are no lines of syntax that aren’t correct. But because rusts syntax encode so much valuable information, not only do those lines compile the meaning behind them, compiles, uh, and is valid. So like I only care about interface testing at the highest level. Rust. There’s no point doing one of those classic.</p>
+<p>The test basically rewrites the function and you get this one-to-one equivalence of lines of code because the compiler’s already doing that. You don’t need to worry about that. Oh, right. It’s marvelous.</p>
+<p><strong>Robin:</strong> Do [00:40:00] you think that rust teams, they not. Subservient to this a hundred percent code coverage maxim, or do they do it all through the interface?</p>
+<p>I see so often these tests where the test is almost just a duplicate of the code that’s in the function and it’s ridiculous. And if you were to write a test for rust, it sounds like you’re basically saying you’d be doing that. You would be saying, does the code do exactly what the code does? And yet I can imagine that there would be people who would write those tests</p>
+<p><strong>Tris:</strong> perhaps, but you don’t have to be quite as nervous.</p>
+<p>When you’re writing in rust or indeed any compiled language, but rust takes this to an extreme. Yeah.</p>
+<p><strong>Robin:</strong> But you see, to me, it’s the dogma. I feel like there’s a significant dogma around saying, if you are a professional engineer, you must be writing these tests. And I’m just curious whether you think that exists at all in Rust or whether you think it, it just doesn’t, like they’re just free from the pressure to write tests in that way.</p>
+<p><strong>Tris:</strong> I think it is overwhelmingly the latter that you are freed from the need to write ridiculous tests because the, okay, the compiler contract with the rich type system. Has already covered a lot of these things I’ve said before in in videos, and I believe I’ve spoken to you about it, that because Rust has the lifetime annotation system, you can describe not just what your data is, but when, which is wildly powerful.</p>
+<p>And it was built into the language so that you could describe when the data is valid so that the memory can be freed when it falls outta scope. Great. And just accidentally made this. Amazing feature that people like me who kind of don’t care about low level stuff like memory, can hijack it to make type safe rules such as an order is only valid if the.</p>
+<p>Customer remains valid. You can temporarily link your types like this. Mm. I would’ve had to write a unit test to test that relationship before. I’ve had to write it into four loops and if statements in the code, and then I would’ve had to write tests that involve four loops and if statements. But now I’ve got this rich type hierarchy where I can guarantee everything at the compile time.</p>
+<p>It’s fricking amazing. There is no faster test than a test that is unwritten. When I hit save in my IDE, the compiler compiles, and we’re done.</p>
+<p><strong>Robin:</strong> That explains why I feel this is very important and you, that you don’t seem like this is really important. And that’s clearly because you know the world you are in is simply more evolved.</p>
+<p>So I’m, I’m wrestling with issues that exist in the old world before people have created these superior supply systems. I mean, you, you are correct.</p>
+<h2 id="the-dangers-of-being-a-youtuber">The dangers of being a YouTuber</h2>
+<p><strong>Tris:</strong> I’ve been meaning to open up some sort of scholarship mentoring option for. Years now. Mm. Like ever since I first started the mentoring and like within the first month or two I realized, oh no, because I’m charging so much, I’m only getting people who are very rich and who already have the means to get private mentoring.</p>
+<p>Yeah. And this probably happens with tutors all over the world. Yes. Forever. Like the people who can afford your services are the people that can afford it. Yeah. People that really need your services will never come to you because they can’t afford it.</p>
+<p><strong>Robin:</strong> Yes. I suppose, um, maybe the quintessential example is pro bono lawyers, right?</p>
+<p>Like as in lawyers are a fantastically expensive resource who are mostly only available to the most rich and powerful people. And then that’s why it’s kind of a well-known thing that lawyers will often do pro bono work, right? Which is where they work for free for, for people that need lawyer lawyering services.</p>
+<p>Right? It’s a good example. I would be very nervous about choosing to become. Particularly a YouTuber because I’m so aware that you would be at the whims of the YouTube algorithm.</p>
+<p>Mm.</p>
+<p>And that Google nowhere near has your interests at heart. Yes. Um, and, and it will cast you aside in a moment. It just doesn’t care.</p>
+<p>Yes. And, and, and, and you are completely at the mercy of Google’s decisions. And you have done a very good job of extracting yourself from that sort of liability by having your mentoring and having your Patreon. And I’m curious, right? I suppose my feeling was that you had started this journey, you quit your job, and then.</p>
+<p>It was my impression, and you might tell me this is wrong, but it was my impression that sort of your income over the next month or two might have been about 10 or 15% less than you might have hoped, and I got the impression you were then working quite hard because you felt a little bit of that pressure.</p>
+<p>And like you said, you got RSI, you got burnout. And, and, and so I was also genuinely curious in like how comfortable you feel at this present time. ’cause I don’t think I’ve, I’ve quite had, I, I don’t think I know very clearly how, how you feel now,</p>
+<p><strong>Tris:</strong> right? I didn’t quit my job until I was able to get enough non YouTube income, Patreon income [00:45:00] to support my bills and food.</p>
+<p>Because I wanted to be able to say, get COVID and be off, you know, not make any videos for a month or two.</p>
+<p><strong>Robin:</strong> Yeah.</p>
+<p><strong>Tris:</strong> And not for that to be a catastrophe.</p>
+<p><strong>Robin:</strong> Yeah. And,</p>
+<p><strong>Tris:</strong> and patrons like, it, it, it feels like I have a salary rather than that I have to a gig work. Yeah. Um, which is wonderful and I wish for anyone who is interested in the creator universe.</p>
+<p>That’s, that, that’s marvelous. Yeah. What unlocked it for me is this the, the mentoring peers that I, that I, that I do on my, my Patreon. Yeah. That is so much money that only, yeah. Successful people were able to do it. But now, and it’s a</p>
+<p><strong>Robin:</strong> subscription model. It’s not, it’s not one time mentoring. It, it, it’s like they pay this every month, they get one session every month.</p>
+<p><strong>Tris:</strong> Yes. That’s it. You can, you can just cancel after the first session. And people are very welcome to do that. A few people have mm-hmm. I’ve been able to answer all the questions like, we’ve blasted through it and it’s been fine. Um, but most people want like an ongoing. Relationship. No students were signing up for 250 bucks a month.</p>
+<p>Of course, that’s too expensive. Yes. So, so last month I was finding in the position where I could offer this concession mentoring. And so I, so for a fifth of the price, $50, I opened up just 10 slots. That’s all I could spare for my calendar. 10 slots of these, uh, scholarship mentoring is what I’m calling it for, um, students, women, and non-binary.</p>
+<p>Um, minoritized people and a, a few other categories like people who are underrepresented in both like the tech world and my students. Like, how can I fix that? I’ve got this very, very, this very, uh. Blunt lever, which is cost. That’s the only lever that I can change to, to, to help that. And I’ve always wanted to, like, I get emails from students all the time asking for like, if I can do, if I can do this, and I now say, I now finally can say yes.</p>
+<p>I always, in the past, I’ve always liked, helped people who, who, who reach out. I’m only human, but I can’t like give the time that I want because I have to. Do things that make money because of the terrible world we live in.</p>
+<p><strong>Robin:</strong> Yeah. So I really like the scholarship thing. Appreciate it. But I really like the, uh, the concept and the challenge of trying to do it.</p>
+<p>And I so sort of do, I, I sort of wish I had your problem in the sense that like, well, on one level, I, I would definitely love to be making content like you do and, and, and have that be. The thing that I do that people care about. Mm-hmm. To be a thought leader, you know? Sure. That’s a be, that’s a better name than influencer, isn’t it?</p>
+<p>Although it basically means the same thing. It is.</p>
+<p><strong>Tris:</strong> It tri, it triggers me a lot because I once had a very nice manager who was very switched on and he very delicately after my first. Review. So Tris, you’ve, you’re, you’ve become a, a real thought leader in our team, and I’d like you to become an action leader.</p>
+<p>And that was his way of saying, do some bloody work.</p>
+<p><strong>Robin:</strong> Oh, Jesus Christ. Oh, that’s, no, that’s horrible. That is, that is, oh my God. Oh.</p>
+</section>
+  <hr />
+  <!-- Post Taxonomies -->
+
+  <!-- Post Nav -->
+<nav class="block-bg mt-12 flex flex-wrap rounded-lg text-lg">
+  <a
+    class="block-hover-mask flex min-w-[50%] grow items-center rounded-l-md p-6 pr-3 font-semibold no-underline"
+    href="https://decapsulate.com/episodes/5/" accesskey=","
+    ><span class="mr-1.5">&#8249;</span><span>Desk Ergonomics, Non-Fiction Podcast Recommendations and Obsidian Deep-dive</span></a>
+  <a
+    class="block-hover-mask ml-auto flex min-w-[50%] grow items-center justify-end rounded-r-md p-6 pl-3 font-semibold no-underline"
+    href="https://decapsulate.com/episodes/3/" accesskey="."
+    ><span>Beginnings, Digital Gardens and AI Delusions</span><span class="ml-1.5">&#8250;</span></a>
+</nav>
+
+  <h3 id="discussion">Discussion</h3>
+  <!-- Comment -->
+<div class="giscus mt-12""></div>
+<script
+  src="https://giscus.app/client.js"
+  data-repo="NamtaoProductions/decapsulate.com"
+  data-repo-id="R_kgDOPLQ6JQ"
+  data-category="Episodes"
+  data-category-id="DIC_kwDOPLQ6Jc4Cs67B"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="dark"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async
+></script>
+
+  <!-- Begin Page End inject -->
+  
+  <!-- End Page End inject -->
+</article>
+
+  </main>
+  <!-- Footer -->
+<footer class="mx-auto flex lg:mt-5 max-w-3xl flex-wrap items-center px-4 py-3 text-sm opacity-60">
+  <div class="mr-auto basis-full lg:basis-1/2">
+  © <time datetime="2026">2026</time> <a href="https://www.namtao.com">Namtao Productions</a> | <a href="https://creativecommons.org/licenses/by-sa/4.0/deed">CC BY-SA 4.0</a>
+  </div>
+  <div class="flex basis-full lg:basis-1/2 lg:justify-end">
+    <span class="mr-6 lg:ml-6">
+      This site does not use cookies
+    </span>
+  </div>
+  <!-- Begin Footer inject -->
+  
+  <!-- End Footer inject -->
+</footer>
+
+  
+    <!-- Mermaid -->
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+  function initMermaid(isDark) {
+    mermaid.initialize({
+      theme: isDark ? "dark" : "default",
+      themeVariables: {
+        darkMode: isDark
+      },
+      startOnLoad: false,
+    });
+    mermaid.run();
+  };
+
+  // Add data-mermaid-code attribute on all mermaid block.
+  document.querySelectorAll(".mermaid").forEach((element) => {
+    element.setAttribute("data-mermaid-code", element.innerHTML);
+  });
+
+  initMermaid(document.documentElement.classList.contains("dark"));
+
+  // Re-render mermaid when theme changed.
+  document.body.addEventListener("set-theme", (e) => {
+    document.querySelectorAll(".mermaid").forEach((element) => {
+      const mermaidCode = element.getAttribute("data-mermaid-code");
+      if (mermaidCode != null) {
+        element.removeAttribute("data-processed");
+        element.innerHTML = mermaidCode;
+      }
+    });
+    initMermaid(e.detail === "dark");
+  });
+</script>
+
+
+  <!-- Begin Body End inject -->
+  
+  <!-- End Body End inject -->
+</body>
+
+</html>
