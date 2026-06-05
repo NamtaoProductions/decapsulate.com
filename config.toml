@@ -16,8 +16,6 @@ feed_filenames = ["atom.xml", "rss.xml", "decapsulate-mp3.xml"]
 bottom_footnotes = true
 smart_punctuation = true
 render_emoji = true
-highlight_code = true
-highlight_theme = "visual-studio-dark"
 
 [extra.menus]
 menu_name = [
