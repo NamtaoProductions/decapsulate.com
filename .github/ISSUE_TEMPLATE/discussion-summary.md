@@ -18,11 +18,11 @@ Intended discussion
 We will:
 - ...
 
-Assumed truths
+Premises
 ===
 
 <!--
-  Stating assumptions, as premises for entering the discussion.
+  State assumed truths behind the discussion.
   Other members should indicate whether:
   - They accept the premise
   - They disagree, but are happy to discuss it in the recording
