@@ -25,9 +25,13 @@ Assumed truths
 Agreed truths
 ---
 
+<!-- Move "truths" into here if all parties in the discussion share them -->
+
 - 
 
 Disagreements (for discussion)
 ---
+
+<!-- Move "truths" into here if discussion members disagree, and are willing to discuss them -->
 
 -
