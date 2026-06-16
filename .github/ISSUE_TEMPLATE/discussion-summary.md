@@ -15,7 +15,8 @@ Intended discussion
 
 <!-- Describe the shape of the discussion we intend to have -->
 
-_We will ..._
+We will:
+- ...
 
 Assumed truths
 ===
@@ -28,8 +29,8 @@ Assumed truths
   - They reject the premise, and don't want to discuss it
 -->
 
-| Truth                                   | Agreed / Discuss / Rejected |
-| -----                                   | --------------------------  |
-| _It's fucked up that ..._               |                             |
-| _Most people act like ..._              |                             |
-| _The world would be much better if ..._ |                             |
+| Truth | Agreed / Discuss / Rejected |
+| --- | --- |
+| _It's fucked up that ..._  |  |
+| _Most people act like ..._ |  |
+| _The world would be much better if ..._ |  |
