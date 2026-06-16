@@ -15,23 +15,21 @@ Intended discussion
 
 <!-- Describe the shape of the discussion we intend to have -->
 
+_We will ..._
+
 Assumed truths
 ===
 
-<!-- Illustrate the starting position for the discussion by stating assumptions behind the discussion, to highlight whether the discussion members are aligned -->
+<!--
+  Stating assumptions, as premises for entering the discussion.
+  Other members should indicate whether:
+  - They accept the premise
+  - They disagree, but are happy to discuss it in the recording
+  - They reject the premise, and don't want to discuss it
+-->
 
-- ...
-
-Agreed truths
----
-
-<!-- Move "truths" into here if all parties in the discussion share them -->
-
-- 
-
-Disagreements (for discussion)
----
-
-<!-- Move "truths" into here if discussion members disagree, and are willing to discuss them -->
-
--
+| Truth                                   | Agreed / Discuss / Rejected |
+| -----                                   | --------------------------  |
+| _It's fucked up that ..._               |                             |
+| _Most people act like ..._              |                             |
+| _The world would be much better if ..._ |                             |
