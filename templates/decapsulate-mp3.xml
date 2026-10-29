@@ -56,8 +56,8 @@
         {%- endif -%}
       </author>
       <link>{{ page.permalink | escape_xml | safe }}</link>
-      <enclosure url="https://decapsulate.com/{{ page.slug }}.mp3" length="{{ page.extra.duration }}" type="audio/mpeg" />
-      <guid>https://decapsulate.com/{{ page.slug }}.mp3</guid>
+      <enclosure url="https://op3.dev/e/https://decapsulate.com/{{ page.slug }}.mp3" length="{{ page.extra.duration }}" type="audio/mpeg" />
+      <guid>https://op3.dev/e/https://decapsulate.com/{{ page.slug }}.mp3</guid>
       <description xml:base="{{ page.permalink | escape_xml | safe }}">{% if page.summary %}{{ page.summary }}{% else %}{{ page.content }}{% endif %}</description>
 
 
